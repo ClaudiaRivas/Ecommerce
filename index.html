@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>FindInMap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" type="image/png" href="icons/map.png">
+	<link rel="stylesheet" type="text/css" href="sytles/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/estilo.css">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/fontello.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div class="up">
+		<span> <img src="icons/arriba.png"/></span>
+	</div>
+
+	<!--Contenedor de nuestra página web-->
+	<div class="container-body">
+		<!--Menu-->
+		<header class="container-navigation">
+			<div class="menu-container">
+				<div class="logo">
+					<div class="contenedor-logo">
+						<a href="index.html"><img src="icons/mapa.png"/></a>
+					</div>
+				</div>
+				<div class="browse">
+					<div class="insert">
+						<form method="POST" class="form-busqueda">
+							<input type="search" name="buscar" class="barra-busqueda">
+							<input type="button" name="Busco" value="Buscar" class="boton-busqueda">
+						</form>
+					</div>
+				</div>
+				<section>
+				<div class="account">
+					<div class="account-propiedad">
+					<a href="#" class="bt-home" id="activarLogin"><i class="fa fa-sign-in separar" aria-hidden="true"></i>Ingresar</a>
+					<a href="" class="bt-home" id="activarRegistrar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Registrarme</a>
+					</div>
+	</section>
+	<div class="login" id="login">
+		<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<form>
+			<input type="text" required placeholder="Usuario">
+			<input type="password" requered placeholder="********">
+			<input type="button" value="Entrar" >
+		</form>
+	</div>
+	<div class="oscurecer" id="oscurecer"></div>
+	<div class="registrar" id="registrar">
+	<div class="cerrarRegistro" id="cerrarRegistro">x</div>
+		<h1>Registro</h1>
+		<form action="">
+			<input type="text" placeholder="Nombre">
+			<input type="text" placeholder="Correo">
+			<input type="password" placeholder="Contraseña">
+			<input type="button" value="Crear">
+		</form>
+				</div>
+					<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	                <script type="text/javascript" src="js/actions.js"></script>
+				<div class="cart">
+					<a href="pages/shopcart.html"><img src="icons/carrito.png"></a>
+				</div>
+				<!--El menu que contendrá las categorías a escoger-->
+				<div id="headernavigate">
+					
+					<ul class="nav">
+						<li><a href="">Joyería y 
+						cosméticos</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Ropa y calzado</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Bodas y fiestas</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Decorativos</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Artículos escolares</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Entretenimiento</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+		</header>
+		<!--Contenido de la página, por categoría de publicaciones-->
+		<section class="container-posts-catgrs">
+			<div class="articles">
+				<div class="titulo-articulos">
+					<h2>Lo más vendido</h2>
+				</div>
+				<article class="article">
+					<a href="#">
+						<!--Integramos el primer artículo en venta-->
+						<div class="img-muestra">
+								<img src="imgs/mochila_hombre.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Mochila de cuero...</h4>
+							<p class="vendedor">Moda escolar</p>
+							<p class="precio">$5.50</p>
+							<p class="envio">Envío $0.50</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/estuche_geometry.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Estuche de geo...</h4>
+							<p class="vendedor">Librería el estudiante</p>
+							<p class="precio">$0.25</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/lapicerobic.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Lapiceros Bic...</h4>
+							<p class="vendedor">Librería el estudiante</p>
+							<p class="precio">$ 1.75</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/pantalones_hombre.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Pantalones...</h4>
+							<p class="vendedor">Moda libre</p>
+							<p class="precio">$10.95</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/falda.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Falda corta...</h4>
+							<p class="vendedor">Moda libre</p>
+							<p class="precio">$15.00</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/zapatos_mujer.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Tacones elegantes...</h4>
+							<p class="vendedor">Zapatería Lola</p>
+							<p class="precio">$35.55</p>
+							<p class="envio">Envío $1.50</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/zapatos_hombre.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Zapatos formales...</h4>
+							<p class="vendedor">Zapatería Lola</p>
+							<p class="precio">$36.10</p>
+							<p class="envio">Envío $1.50</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/pelo_claus.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Adorno de Santa Claus...</h4>
+							<p class="vendedor">Decoraciones Eva</p>
+							<p class="precio">$ 4.33</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/escoba_claus.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Funda de Santa Claus para...</h4>
+							<p class="vendedor">Decoraciones Eva</p>
+							<p class="precio">$ 2.73</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+						<div class="img-muestra">
+							<img src="imgs/cremas_natural.jpg">
+						</div>
+						<!--Agregando una descripción del producto-->
+						<div class="descript_producto">
+							<h4>Crema humectante natural...</h4>
+							<p class="vendedor">Living Health</p>
+							<p class="precio">$ 1.00</p>
+							<p class="envio">Envío $0.75</p>
+						</div>
+					</a>
+				</article>
+
+
+				<!--El menú para cambiar de página y saber en cuál estamos-->
+				<div class="titulo-seleccion">
+					<h2>Descubre regalos</h2>
+				</div>
+				<nav class="selpage">
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="imgs/maquillaje.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Cosméticos</h5>
+							</div>
+						</a>
+					</div>
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="imgs/decoracion_navidad.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Decoraciones navideñas</h5>
+							</div>
+						</a>
+					</div>
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="imgs/decoracion_claus.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Hechos a mano</h5>
+							</div>
+						</a>
+					</div>
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="imgs/sudadera.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Ropa ocasional</h5>
+							</div>
+						</a>
+					</div>
+				</nav>
+			</div>
+
+
+			<!--Barra lateral con las categorías-->
+			<aside class="categories">
+				<div class="cart-in">
+					<a href="pages/shopcart.html"><img src="icons/shopcart3.png"></a>
+				</div>
+				<div class="busqueda">
+					<div class="buscando-otr">
+						<form method="POST" class="form-buscador-lat">
+							<input type="search" name="busque" class="buscador">
+							<input type="button" name="buscado" value="Buscar" class="boton-buscado">
+						</form>
+					</div>
+				</div>
+				<nav class="cat-menu">
+					<div class="menu-categorias">
+						<a href="#">Moda Mujer</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Moda Hombre</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Decoración</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Artículos escolares</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Calzado</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Entretenimiento</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Artículos para el hogar</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Ocasiones especiales</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Bodas</a>
+					</div>
+					<div class="menu-categorias">
+						<a href="#">Ropa para bebé</a>
+					</div>
+				</nav>
+			</aside>
+		</section>
+
+		<!--Pie de página-->
+		<footer>
+		<div class="container-footer-all">
+		<div class="container-info-site">
+			<div class="colum1">
+				<h1>Contenido</h1>
+				<div class="row2">
+					<a href=""><img src="icons/regalo.png"></a>
+					<a href=""><label>Regalos </label></a>
+				</div>
+				<div class="row2">
+					<a href=""><img src="icons/corte.png"></a>
+					<a href=""><label>Cupones</label></a>
+				</div>
+				<div class="row2">
+					<a href=""><img src="icons/venta.png"></a>
+					<a href=""><label>Ofertas</label></a>
+				</div></div>	
+			<div class="colum2">
+				<h1>Redes Sociales</h1>
+
+				<div class="row2">
+					<a href=""><img src="icons/facebook.png"></a>
+					<a href=""><label>Facebook </label></a>
+				</div>
+				<div class="row2">
+					<a href=""><img src="icons/twitters.png"></a>
+					<a href=""><label>Twitters </label></a>
+				</div>
+				<div class="row2">
+					<a href=""><img src="icons/whatsapp.png"></a>
+					<a href=""><label>WhatsApp </label></a>
+				</div>
+				<div class="row2">
+					<a href=""><img src="icons/instagram.png"></a>
+					<a href=""><label>Instagram </label></a>
+				</div></div>
+			<div class="colum3">
+				<h1>Informacion Contactos</h1>
+				<div class="row2">
+					<img src="icons/digital-map.png">
+					<label>Colonia San genaro segunda Calle poniente </label>
+				</div>
+				<div class="row2">
+					<img src="icons/telefono.png">
+					<label>79999335332</label>
+				</div>
+				<div class="row2">
+					<img src="icons/gmail.png">
+					<label>rr15i04001@usonsonate.edu.sv</label>
+				</div></div>
+		</div>
+		</div>
+		<div class="container-footer">
+			<div class="footer">
+				<div class="copyright">2019 Todos los derechos Reservados
+				</div>
+
+				<div class="information">
+					Claudia del Carmen Rivas | Fatima Guadalupe Martinez | Jose Eduardo Monchez
+				</div>
+
+			</div>
+		</div>
+		</footer>
+	</div>
+</body>
+</html>
