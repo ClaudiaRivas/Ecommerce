@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>FindInMap</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="icon" type="image/png" href="icons/map.png">
+	<link rel="icon" type="image/png" href="icons/mapa.png">
 	<link rel="stylesheet" type="text/css" href="sytles/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/estilo.css">
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -29,48 +29,49 @@
 				<div class="browse">
 					<div class="insert">
 						<form method="POST" class="form-busqueda">
-							<input type="search" name="buscar" class="barra-busqueda">
+							<input type="search" name="buscar" class="barra-busqueda" placeholder="Quiero...">
 							<input type="button" name="Busco" value="Buscar" class="boton-busqueda">
 						</form>
 					</div>
 				</div>
 				<section>
-				<div class="account">
-					<div class="account-propiedad">
-					<a href="#" class="bt-home" id="activarLogin"><i class="fa fa-sign-in separar" aria-hidden="true"></i>Ingresar</a>
-					<a href="" class="bt-home" id="activarRegistrar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Registrarme</a>
+					<div class="account">
+						<div class="account-propiedad">
+						<a href="#" class="bt-home" id="activarLogin"><i class="fa fa-sign-in separar" aria-hidden="true"></i>Ingresar</a>
+						<a href="" class="bt-home" id="activarRegistrar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Registrarme</a>
+						</div>
 					</div>
-	</section>
-	<div class="login" id="login">
-		<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
-		<form>
-			<input type="text" required placeholder="Usuario">
-			<input type="password" requered placeholder="********">
-			<input type="button" value="Entrar" >
-		</form>
-	</div>
-	<div class="oscurecer" id="oscurecer"></div>
-	<div class="registrar" id="registrar">
-	<div class="cerrarRegistro" id="cerrarRegistro">x</div>
-		<h1>Registro</h1>
-		<form action="">
-			<input type="text" placeholder="Nombre">
-			<input type="text" placeholder="Correo">
-			<input type="password" placeholder="Contraseña">
-			<input type="button" value="Crear">
-		</form>
+				</section>
+				<div class="login" id="login">
+					<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<form>
+						<input type="text" required placeholder="Usuario">
+						<input type="password" requered placeholder="********">
+						<input type="button" value="Entrar" >
+					</form>
 				</div>
-					<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-	                <script type="text/javascript" src="js/actions.js"></script>
+				<div class="oscurecer" id="oscurecer"></div>
+				<div class="registrar" id="registrar">
+					<div class="cerrarRegistro" id="cerrarRegistro">x</div>
+					<h1>Registro</h1>
+					<form action="">
+						<input type="text" placeholder="Nombre">
+						<input type="text" placeholder="Correo">
+						<input type="password" placeholder="Contraseña">
+						<input type="button" value="Crear">
+					</form>
+				</div>
+				<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	            <script type="text/javascript" src="js/actions.js"></script>
 				<div class="cart">
 					<a href="pages/shopcart.html"><img src="icons/carrito.png"></a>
 				</div>
+
 				<!--El menu que contendrá las categorías a escoger-->
 				<div id="headernavigate">
 					
 					<ul class="nav">
-						<li><a href="">Joyería y 
-						cosméticos</a>
+						<li><a href="">Joyería y cosméticos</a>
 							<ul>
 								<li><a href="">Sub1</a></li>
 								<li><a href="">Sub2</a></li>
@@ -128,7 +129,7 @@
 					<h2>Lo más vendido</h2>
 				</div>
 				<article class="article">
-					<a href="#">
+					<a href="pages/articles.html">
 						<!--Integramos el primer artículo en venta-->
 						<div class="img-muestra">
 								<img src="imgs/mochila_hombre.jpg">
@@ -327,7 +328,7 @@
 				<div class="busqueda">
 					<div class="buscando-otr">
 						<form method="POST" class="form-buscador-lat">
-							<input type="search" name="busque" class="buscador">
+							<input type="search" name="busque" class="buscador" placeholder="Quiero...">
 							<input type="button" name="buscado" value="Buscar" class="boton-buscado">
 						</form>
 					</div>
@@ -369,68 +370,68 @@
 
 		<!--Pie de página-->
 		<footer>
-		<div class="container-footer-all">
-		<div class="container-info-site">
-			<div class="colum1">
-				<h1>Contenido</h1>
-				<div class="row2">
-					<a href=""><img src="icons/regalo.png"></a>
-					<a href=""><label>Regalos </label></a>
-				</div>
-				<div class="row2">
-					<a href=""><img src="icons/corte.png"></a>
-					<a href=""><label>Cupones</label></a>
-				</div>
-				<div class="row2">
-					<a href=""><img src="icons/venta.png"></a>
-					<a href=""><label>Ofertas</label></a>
-				</div></div>	
-			<div class="colum2">
-				<h1>Redes Sociales</h1>
+			<div class="container-footer-all">
+				<div class="container-info-site">
+					<div class="colum1">
+						<h1>Contenido</h1>
+						<div class="row2">
+							<a href=""><img src="icons/regalo.png"></a>
+							<a href=""><label>Regalos </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="icons/corte.png"></a>
+							<a href=""><label>Cupones</label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="icons/venta.png"></a>
+							<a href=""><label>Ofertas</label></a>
+						</div></div>	
+					<div class="colum2">
+						<h1>Redes Sociales</h1>
 
-				<div class="row2">
-					<a href=""><img src="icons/facebook.png"></a>
-					<a href=""><label>Facebook </label></a>
+						<div class="row2">
+							<a href=""><img src="icons/facebook.png"></a>
+							<a href=""><label>Facebook </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="icons/twitters.png"></a>
+							<a href=""><label>Twitters </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="icons/whatsapp.png"></a>
+							<a href=""><label>WhatsApp </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="icons/instagram.png"></a>
+							<a href=""><label>Instagram </label></a>
+						</div></div>
+					<div class="colum3">
+						<h1>Informacion Contactos</h1>
+						<div class="row2">
+							<img src="icons/digital-map.png">
+							<label>Colonia San genaro segunda Calle poniente </label>
+						</div>
+						<div class="row2">
+							<img src="icons/telefono.png">
+							<label>79999335332</label>
+						</div>
+						<div class="row2">
+							<img src="icons/gmail.png">
+							<label>rr15i04001@usonsonate.edu.sv</label>
+						</div></div>
 				</div>
-				<div class="row2">
-					<a href=""><img src="icons/twitters.png"></a>
-					<a href=""><label>Twitters </label></a>
-				</div>
-				<div class="row2">
-					<a href=""><img src="icons/whatsapp.png"></a>
-					<a href=""><label>WhatsApp </label></a>
-				</div>
-				<div class="row2">
-					<a href=""><img src="icons/instagram.png"></a>
-					<a href=""><label>Instagram </label></a>
-				</div></div>
-			<div class="colum3">
-				<h1>Informacion Contactos</h1>
-				<div class="row2">
-					<img src="icons/digital-map.png">
-					<label>Colonia San genaro segunda Calle poniente </label>
-				</div>
-				<div class="row2">
-					<img src="icons/telefono.png">
-					<label>79999335332</label>
-				</div>
-				<div class="row2">
-					<img src="icons/gmail.png">
-					<label>rr15i04001@usonsonate.edu.sv</label>
-				</div></div>
-		</div>
-		</div>
-		<div class="container-footer">
-			<div class="footer">
-				<div class="copyright">2019 Todos los derechos Reservados
-				</div>
-
-				<div class="information">
-					Claudia del Carmen Rivas | Fatima Guadalupe Martinez | Jose Eduardo Monchez
-				</div>
-
 			</div>
-		</div>
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">2019 Todos los derechos Reservados
+					</div>
+
+					<div class="information">
+						Claudia del Carmen Rivas | Fatima Guadalupe Martinez | Jose Eduardo Monchez
+					</div>
+
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>FindInMap | articulos</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" type="image/png" href="../icons/mapa.png">
+	<link rel="stylesheet" type="text/css" href="../sytles/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../styles/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../styles/fontello.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div class="up">
+		<span> <img src="../icons/arriba.png"/></span>
+	</div>
+	<!--Contenedor de nuestra página web-->
+	<div class="container-body">
+		<!--Menu-->
+		<header class="container-navigation">
+			<div class="menu-container">
+				<div class="logo">
+					<div class="contenedor-logo">
+						<a href="../index.html"><img src="../icons/mapa.png"/></a>
+					</div>
+				</div>
+				<div class="browse">
+					<div class="insert">
+						<form method="POST" class="form-busqueda">
+							<input type="search" name="buscar" class="barra-busqueda" placeholder="Quiero...">
+							<input type="button" name="Busco" value="Buscar" class="boton-busqueda">
+						</form>
+					</div>
+				</div>
+				<section>
+					<div class="account">
+						<div class="account-propiedad">
+						<a href="#" class="bt-home" id="activarLogin"><i class="fa fa-sign-in separar" aria-hidden="true"></i>Ingresar</a>
+						<a href="" class="bt-home" id="activarRegistrar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Registrarme</a>
+						</div>
+					</div>
+				</section>
+				<div class="login" id="login">
+					<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<form>
+						<input type="text" required placeholder="Usuario">
+						<input type="password" requered placeholder="********">
+						<input type="button" value="Entrar" >
+					</form>
+				</div>
+				<div class="oscurecer" id="oscurecer"></div>
+				<div class="registrar" id="registrar">
+					<div class="cerrarRegistro" id="cerrarRegistro">x</div>
+					<h1>Registro</h1>
+					<form action="">
+						<input type="text" placeholder="Nombre">
+						<input type="text" placeholder="Correo">
+						<input type="password" placeholder="Contraseña">
+						<input type="button" value="Crear">
+					</form>
+				</div>
+				<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+	            <script type="text/javascript" src="../js/actions.js"></script>
+
+				<div class="cart">
+					<a href="shopcart.html"><img src="../icons/carrito.png"></a>
+				</div>
+
+				<!--El menu que contendrá las categorías a escoger-->
+				<div id="headernavigate">
+					
+					<ul class="nav">
+						<li><a href="">Joyería y cosméticos</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Ropa y calzado</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Bodas y fiestas</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Decorativos</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Artículos escolares</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+						<li><a href="">Entretenimiento</a>
+							<ul>
+								<li><a href="">Sub1</a></li>
+								<li><a href="">Sub2</a></li>
+								<li><a href="">Sub3</a></li>
+								<li><a href="">Sub4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+		<!--Contenido de la publicación-->
+		<section class="container-posts-catgrs">
+			<div class="articles">
+				<!--FOTOGRAFÍAS DEL ARTÍCULO-->
+				<article class="articulo-publicado">
+					<a href="#">
+						<!--Integramos el primer artículo en venta-->
+						<div class="img-muestra">
+								<img src="../imgs/mochila_hombre.jpg">
+						</div>
+					</a>
+				</article>
+
+				<!--Area de comentarios-->
+				<article class="comentarios-contenedor">
+					<hr class="sepadad-comment"/>
+					<div class="comentario-area">
+						<h3>Comentarios</h3>
+						<form method="POST" class="comments-area">
+							<div class="id-usuario">
+								<img src="../icons/userprof.png">
+								<h3>Jorge Almedar</h3>
+							</div>
+							<textarea name="comentar" rows="15" cols="20" class="comment" placeholder="Escribe un comentario..."></textarea>
+							<input type="button" name="imagen" value="Subir imagen..." class="boton-img">
+							<p>puntuación</p>
+							<input type="submit" name="comentar" value="COMENTAR" class="boton-comentar">
+						</form>
+					</div>
+					<hr class="sepadad-comment"/>
+				</article>
+
+				<!--El menú para cambiar de página y saber en cuál estamos-->
+				<div class="titulo-seleccion">
+					<h2>Descubre regalos</h2>
+				</div>
+				<nav class="selpage">
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="../imgs/cosmeticos.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Cosméticos</h5>
+							</div>
+						</a>
+					</div>
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="../imgs/decoracion_navidad.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Decoraciones navideñas</h5>
+							</div>
+						</a>
+					</div>
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="../imgs/decoracion_claus.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Hechos a mano</h5>
+							</div>
+						</a>
+					</div>
+					<div class="imagen-regalos">
+						<a href="#">
+							<div class="img-gift">
+								<img src="../imgs/sudadera.jpg">
+							</div>
+							<div class="desc-gift">
+								<h5>Ropa ocasional</h5>
+							</div>
+						</a>
+					</div>
+				</nav>
+			</div>
+
+
+			<!--Barra lateral con las categorías-->
+			<aside class="categories">
+				<div class="cart-in">
+					<a href="shopcart.html"><img src="../icons/shopcart3.png"></a>
+				</div>
+				<div class="agregar-boton">
+					<form method="POST" class="add">
+						<input type="button" name="add-cart" value="AÑADIR AL CARRITO" class="carrito-button">
+					</form>
+				</div>
+
+
+				<!--AREA PARA DESCRIPCION DEL PRODUCTO GENERAL-->
+				<article class="descripcion-publicado">
+					<!--Agregando una descripción del producto-->
+					<div class="descript_producto">
+						<!--TIENDA-->
+						<a href="#" class="tienda">Moda escolar</a>
+						<!--RESEÑAS-->
+						<p class="stars-review">poner en esta parte reseñas</p>
+						<!--TITULO DEL PRODUCTO-->
+						<p class="title-article">Mochila de cuero bordada a mano</p>
+						<!--PRECIO-->
+						<p class="precio-article">$5.50</p>
+						<!--CANTIDAD-->
+						<p class="titulo-cantidad">Disponibles:</p>
+						<p class="cantidad-article">10</p>
+						<hr class="linea-separad" />
+						<div class="descript-prod">
+							<h3>Información del producto</h3>
+							<img src="../icons/amano.png">
+							<p>Hecho a mano</p>
+							<h4 class="title-material">Materiales</h4>
+							<p class="descript-material">cuero, hilo, tela</p>
+							<p class="describiendo">Learn how to make sushi with this fun comic book style recipe book! Cute characters guide you through making hosomaki, futomaki and nigiri, as well as how to cook edamame and gyoza to complete your sushi meal. The comic makes it easy to follow the step-by-step, visual instructions (plus it’s really cute!).</p>
+						</div>
+						<hr class="linea-separad" />
+						<!--PRECIO ENVIO-->
+						<p class="tipo-envio">Tipo envío</p>
+						<select name="ENVIO" class="lista-envio">
+							<option value="1">Comanditas</option>
+							<option value="2">Correos</option>
+						</select>
+						<p class="env-pre">Precio envío:</p>
+						<p class="envio-precio">$0.50</p>
+						<p>Llegará de 1 - 3 horas</p>
+					</div>
+				</article>
+			</aside>
+		</section>
+
+
+
+
+
+		<!--Pie de página-->
+		<footer>
+			<div class="container-footer-all">
+				<div class="container-info-site">
+					<div class="colum1">
+						<h1>Contenido</h1>
+						<div class="row2">
+							<a href=""><img src="../icons/regalo.png"></a>
+							<a href=""><label>Regalos </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/corte.png"></a>
+							<a href=""><label>Cupones</label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/venta.png"></a>
+							<a href=""><label>Ofertas</label></a>
+						</div>
+					</div>	
+					<div class="colum2">
+						<h1>Redes Sociales</h1>
+
+						<div class="row2">
+							<a href=""><img src="../icons/facebook.png"></a>
+							<a href=""><label>Facebook </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/twitters.png"></a>
+							<a href=""><label>Twitters </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/whatsapp.png"></a>
+							<a href=""><label>WhatsApp </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/instagram.png"></a>
+							<a href=""><label>Instagram </label></a>
+						</div>
+					</div>
+					<div class="colum3">
+						<h1>Informacion Contactos</h1>
+						<div class="row2">
+							<img src="../icons/digital-map.png">
+							<label>Colonia San genaro segunda Calle poniente </label>
+						</div>
+						<div class="row2">
+							<img src="../icons/telefono.png">
+							<label>79999335332</label>
+						</div>
+						<div class="row2">
+							<img src="../icons/gmail.png">
+							<label>rr15i04001@usonsonate.edu.sv</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">2019 Todos los derechos Reservados
+					</div>
+
+					<div class="information">
+						Claudia del Carmen Rivas | Fatima Guadalupe Martinez | Jose Eduardo Monchez
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
