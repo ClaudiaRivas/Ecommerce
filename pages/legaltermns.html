@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>FindInMap | articulos</title>
+	<title>FindInMap</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="icon" type="image/png" href="../icons/mapa.png">
 	<link rel="stylesheet" type="text/css" href="../sytles/fontawesome.min.css">
@@ -15,6 +15,7 @@
 	<div class="up">
 		<span> <img src="../icons/arriba.png"/></span>
 	</div>
+
 	<!--Contenedor de nuestra página web-->
 	<div class="container-body">
 		<!--Menu-->
@@ -62,9 +63,8 @@
 				</div>
 				<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
 	            <script type="text/javascript" src="../js/actions.js"></script>
-
 				<div class="cart">
-					<a href="shopcart.html"><img src="../icons/carrito.png"></a>
+					<a href="pages/shopcart.html"><img src="../icons/carrito.png"></a>
 				</div>
 
 				<!--El menu que contendrá las categorías a escoger-->
@@ -121,148 +121,45 @@
 						</li>
 					</ul>
 				</div>
-			</div>
 		</header>
-
-
-
-
-
-		<!--Contenido de la publicación-->
-		<section class="container-posts-catgrs">
-			<div class="articles">
-				<!--FOTOGRAFÍAS DEL ARTÍCULO-->
-				<article class="articulo-publicado">
-					<a href="#">
-						<!--Integramos el primer artículo en venta-->
-						<div class="img-muestra">
-								<img src="../imgs/mochila_hombre.jpg">
-						</div>
-					</a>
-				</article>
-
-				<!--Area de comentarios-->
-				<article class="comentarios-contenedor">
-					<hr class="sepadad-comment"/>
-					<div class="comentario-area">
-						<h3>Comentarios</h3>
-						<form method="POST" class="comments-area">
-							<div class="id-usuario">
-								<img src="../icons/userprof.png">
-								<h3>Jorge Almedar</h3>
-							</div>
-							<textarea name="comentar" rows="15" cols="20" class="comment" placeholder="Escribe un comentario..."></textarea>
-							<input type="button" name="imagen" value="Subir imagen..." class="boton-img">
-							<p>puntuación</p>
-							<input type="submit" name="comentar" value="COMENTAR" class="boton-comentar">
-						</form>
-					</div>
-					<hr class="sepadad-comment"/>
-				</article>
-
-				<!--El menú para cambiar de página y saber en cuál estamos-->
-				<div class="titulo-seleccion">
-					<h2>Descubre regalos</h2>
+		<!--Contenido de la página, por categoría de publicaciones-->
+		<section class="container-legal">
+			<div class="legal">
+				<div class="enlace-normas">
+					<a href="community.html">Normas de la comunidad</a>
+					<p>Familiarizate con las normas y políticas de la comunidad de FindInMap</p>
 				</div>
-				<nav class="selpage">
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="../imgs/cosmeticos.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Cosméticos</h5>
-							</div>
-						</a>
+				<div class="titulo-legal">
+					<img src="../icons/legal.png">
+					<h2>Información legal</h2>
+				</div>
+				<article class="area-legal">
+					<!--Agregando las politicas y condiciones-->
+					<hr/>
+					<div class="descript_legal">
+						<p>FindInMap El Salvador centroamércia</p>
+						<p>Colonia San genaro segunda Calle poniente</p>
+						<p>Sonsonate</p>
+						<br>
+						<p><strong>Teléfono: </strong>+503 79999335332</p>
+						<p><strong>Correo electrónico: </strong>rr15i04001@usonsonate.edu.sv</p>
+						<br>
+						<p><strong>Representada por:</strong></p>
+						<p>Claudia Rivas</p>
+						<p>Fátima Martinez</p>
+						<p>Eduardo Guardado</p>
+						<br>
+						<p>FindInMap El Salvador es una sociedad de responsabilidad ilimitada constituida de acuerdo con las leyes de El Salvador con número de registro mercantil 495696.</p>
+						<br>
+						<p><strong>Número de IVA: </strong>ECD15756A</p>
 					</div>
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="../imgs/decoracion_navidad.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Decoraciones navideñas</h5>
-							</div>
-						</a>
+					<hr/>
+					<div class="content-legal">
+						<p>Ultima actualización 24/11/2019</p>
 					</div>
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="../imgs/decoracion_claus.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Hechos a mano</h5>
-							</div>
-						</a>
-					</div>
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="../imgs/sudadera.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Ropa ocasional</h5>
-							</div>
-						</a>
-					</div>
-				</nav>
+				</article>
 			</div>
-
-
-			<!--Barra lateral con las categorías-->
-			<aside class="categories">
-				<div class="cart-in">
-					<a href="shopcart.html"><img src="../icons/shopcart3.png"></a>
-				</div>
-				<div class="agregar-boton">
-					<form method="POST" class="add">
-						<input type="button" name="add-cart" value="AÑADIR AL CARRITO" class="carrito-button">
-					</form>
-				</div>
-
-
-				<!--AREA PARA DESCRIPCION DEL PRODUCTO GENERAL-->
-				<article class="descripcion-publicado">
-					<!--Agregando una descripción del producto-->
-					<div class="descript_producto">
-						<!--TIENDA-->
-						<a href="#" class="tienda">Moda escolar</a>
-						<!--RESEÑAS-->
-						<p class="stars-review">poner en esta parte reseñas</p>
-						<!--TITULO DEL PRODUCTO-->
-						<p class="title-article">Mochila de cuero bordada a mano</p>
-						<!--PRECIO-->
-						<p class="precio-article">$5.50</p>
-						<!--CANTIDAD-->
-						<p class="titulo-cantidad">Disponibles:</p>
-						<p class="cantidad-article">10</p>
-						<hr class="linea-separad" />
-						<div class="descript-prod">
-							<h3>Información del producto</h3>
-							<img src="../icons/amano.png">
-							<p>Hecho a mano</p>
-							<h4 class="title-material">Materiales</h4>
-							<p class="descript-material">cuero, hilo, tela</p>
-							<p class="describiendo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						</div>
-						<hr class="linea-separad" />
-						<!--PRECIO ENVIO-->
-						<p class="tipo-envio">Tipo envío</p>
-						<select name="ENVIO" class="lista-envio">
-							<option value="1">Comanditas</option>
-							<option value="2">Correos</option>
-						</select>
-						<p class="env-pre">Precio envío:</p>
-						<p class="envio-precio">$0.50</p>
-						<p>Llegará de 1 - 3 horas</p>
-					</div>
-				</article>
-			</aside>
 		</section>
-
-
-
-
 
 		<!--Pie de página-->
 		<footer>
@@ -281,8 +178,7 @@
 						<div class="row2">
 							<a href=""><img src="../icons/venta.png"></a>
 							<a href=""><label>Ofertas</label></a>
-						</div>
-					</div>	
+						</div></div>	
 					<div class="colum2">
 						<h1>Redes Sociales</h1>
 
@@ -301,8 +197,7 @@
 						<div class="row2">
 							<a href=""><img src="../icons/instagram.png"></a>
 							<a href=""><label>Instagram </label></a>
-						</div>
-					</div>
+						</div></div>
 					<div class="colum3">
 						<h1>Informacion Contactos</h1>
 						<div class="row2">
@@ -316,8 +211,7 @@
 						<div class="row2">
 							<img src="../icons/gmail.png">
 							<label>rr15i04001@usonsonate.edu.sv</label>
-						</div>
-					</div>
+						</div></div>
 				</div>
 			</div>
 			<div class="container-footer">
