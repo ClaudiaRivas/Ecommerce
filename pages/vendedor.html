@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>FindInMap</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" type="image/png" href="../icons/mapa.png">
+	<link rel="stylesheet" type="text/css" href="../sytles/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../styles/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../styles/fontello.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div class="up">
+		<span> <img src="../icons/arriba.png"/></span>
+	</div>
+
+	<!--Contenedor de nuestra página web-->
+	<div class="container-body">
+		<!--Menu-->
+		<header class="container-navigation">
+			<div class="menu-container">
+				<div class="logo">
+					<div class="contenedor-logo">
+						<a href="../index.html"><img src="../icons/mapa.png"/></a>
+					</div>
+				</div>
+				<div class="browse">
+					<div class="insert">
+						<form method="POST" class="form-busqueda">
+							<input type="search" name="buscar" class="barra-busqueda" placeholder="Quiero...">
+							<input type="button" name="Busco" value="Buscar" class="boton-busqueda">
+						</form>
+					</div>
+				</div>
+				<section>
+					<div class="account">
+						<div class="account-propiedad">
+						<a href="#" class="bt-home" id="activarLogin"><i class="fa fa-sign-in separar" aria-hidden="true"></i>Ingresar</a>
+						<a href="" class="bt-home" id="activarRegistrar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Registrarme</a>
+						</div>
+					</div>
+				</section>
+				<div class="login" id="login">
+					<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<form>
+						<input type="text" required placeholder="Usuario">
+						<input type="password" requered placeholder="********">
+						<input type="button" value="Entrar" >
+					</form>
+				</div>
+				<div class="oscurecer" id="oscurecer"></div>
+				<div class="registrar" id="registrar">
+					<div class="cerrarRegistro" id="cerrarRegistro">x</div>
+					<h1>Registro</h1>
+					<form action="">
+						<input type="text" placeholder="Nombre">
+						<input type="text" placeholder="Correo">
+						<input type="password" placeholder="Contraseña">
+						<input type="button" value="Crear">
+					</form>
+				</div>
+				<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+	            <script type="text/javascript" src="../js/actions.js"></script>
+				<div class="cart">
+					<a href="pages/shopcart.html"><img src="../icons/carrito.png"></a>
+				</div>
+
+				<!--El menu que contendrá las categorías a escoger-->
+				<div id="headernavigate">
+					
+					<ul class="nav">
+						<li><a href="">Joyería y cosméticos</a>
+							<ul>
+								<li><a href="">Collares</a></li>
+								<li><a href="">Anillos</a></li>
+								<li><a href="">Cremas</a></li>
+								<li><a href="">Maquillaje</a></li>
+							</ul>
+						</li>
+						<li><a href="">Ropa y calzado</a>
+							<ul>
+								<li><a href="">Mujer</a></li>
+								<li><a href="">Hombre</a></li>
+								<li><a href="">Niños y bebés</a></li>
+								<li><a href="">Bolsos y monederos</a></li>
+							</ul>
+						</li>
+						<li><a href="">Bodas y fiestas</a>
+							<ul>
+								<li><a href="">Artículos de fiesta</a></li>
+								<li><a href="">Invitaciones</a></li>
+								<li><a href="">Decoración para boda</a></li>
+								<li><a href="">Ropa para bodas</a></li>
+							</ul>
+						</li>
+						<li><a href="">Decorativos</a>
+							<ul>
+								<li><a href="">Hogar</a></li>
+								<li><a href="">Oficina</a></li>
+								<li><a href="">Exterior y jardinería</a></li>
+								<li><a href="">Para mascotas</a></li>
+							</ul>
+						</li>
+						<li><a href="">Artículos escolares</a>
+							<ul>
+								<li><a href="">Cuadernos</a></li>
+								<li><a href="">Mochilas</a></li>
+								<li><a href="">Arte y diseño</a></li>
+								<li><a href="">Papelería</a></li>
+							</ul>
+						</li>
+						<li><a href="">Entretenimiento</a>
+							<ul>
+								<li><a href="">Libros</a></li>
+								<li><a href="">Juguetes</a></li>
+								<li><a href="">Películas y música</a></li>
+								<li><a href="">Electrónicos</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+		</header>
+		<!--Contenido de la página, por categoría de publicaciones-->
+		<section class="container-usos">
+			<div class="usos">
+				<div class="enlace-normas">
+					<a href="community.html">Normas de la comunidad</a>
+					<p>Familiarizate con las normas y políticas de la comunidad de FindInMap</p>
+				</div>
+				<div class="titulo-usos">
+					<img src="../icons/promoter.png">
+					<h2>Política del vendedor</h2>
+				</div>
+				<article class="area-usos">
+					<!--Agregando las normas del comprador-->
+					<hr/>
+					<div class="descript_usos">
+						<p>FindInMap es un mercado en el que puedes vender tus productos hechos a mano, artículos vintage y materiales de artesanía directamente a compradores de todo el mundo. Queremos asegurarnos de que tú y tus compradores viváis una experiencia positiva en FindInMap. Sigue leyendo para obtener más información sobre tus derechos, así como lo que se espera de ti como vendedor.</p>
+					</div>
+					<hr/>
+					<div class="content-usos">
+						<p><br>Esta política es parte de nuestras condiciones de uso. Al abrir una tienda en FindInMap, aceptas tanto esta política como las condiciones de uso.</p>
+						<h3><br>1. Lo que se puede vender en FindInMap</h3>
+						<p>FindInMap es un mercado único. Los compradores vienen aquí para comprar artículos que, probablemente, no encuentren en ningún otro lugar. Todo lo que aparece a la venta en FindInMap debe ser hecho a mano, vintage o materiales de artesanía.</p>
+						<p><br>Los artículos hechos a mano son artículos que están hechos o diseñados por ti, el vendedor. </p>
+						<p><br>Si vendes artículos hechos a mano, aceptas que:</p>
+						<p><br>1. Todos los artículos hechos a mano están hechos o diseñados por ti. Si trabajas con un socio de producción, tienes que hacerlo público en los anuncios pertinentes. </p>
+						<p><br>2. Describes con exactitud a cada persona involucrada en la fabricación de un artículo en tu tienda en tu sección de presentación.</p>
+						<p><br>3. Utilizas tus propias fotografías, no fotografías de bancos de imágenes, representaciones artísticas ni fotografías utilizadas por otros vendedores o sitios.</p>
+						<p><br>Si vendes artículos personalizados o hechos bajo pedido en la categoría Hecho a mano, aceptas que:</p>
+						<p><br>1. Todos los anuncios pueden comprarse a un precio fijo.</p>
+						<p><br>2. Si usas fotografías de trabajos anteriores con opciones de personalización (como color) incluidas en el anuncio, deja claro en la descripción que las fotografías que se muestran son solo ejemplos.</p>
+						<p><br>Los artículos vintage deben tener al menos 20 años.</p>
+						<p><br>Materiales para artesanía son herramientas, ingredientes o materiales cuya finalidad principal es su uso en la creación de un artículo u ocasión especial. Los materiales para artesanía pueden ser hechos a mano, comerciales o vintage. Los materiales para fiesta también pueden venderse como materiales para artesanía.</p>
+						<p><br>Te animamos a que seas transparente con tus compradores sobre dónde y cómo se hicieron tus productos, y de dónde proceden tus materiales. Puedes mostrar si tus artículos son hechos a mano o vintage, o si tienen atributos sociales o ambientales, como orgánico o reciclado.</p>
+					</div>
+					<div class="content-usos">
+						<h3>2. Lo que no se puede vender en FindInMap</h3>
+						<p>No se permite la venta de artículos prohibidos, servicios ni artículos que infringen nuestras políticas de propiedad intelectual, aun cuando cumplieran de alguna otra forma con los criterios del mercado.</p>
+						<p><br>La categoría Hecho a mano no admite la reventa de artículos. La reventa hace referencia a poner a la venta un artículo como hecho a mano cuando no estás involucrado en el diseño o la fabricación de ese artículo.</p>
+						<p><br>Ten en cuenta que los miembros podrán marcar anuncios que, en apariencia, infringen nuestras políticas para que FindInMap los revise. FindInMap podrá eliminar cualquier artículo que infrinja nuestras políticas. Ten en cuenta que las tarifas de publicación no son reembolsables. FindInMap también podrá suspender o cerrar tu cuenta si determinara que se ha cometido una infracción. Aún deberás pagar las tarifas pendientes de tu factura de FindInMap.</p>
+						<p><br>Si estás recaudando dinero en nombre de una organización benéfica, debes obtener el consentimiento de esta. </p>
+						<h4><br>Representarte a ti mismo, a tu tienda y a tus anuncios de forma honesta</h4>
+						<p><br>En FindInMap valoramos la transparencia. Transparencia significa que te representas a ti mismo, a tus artículos y a tu negocio de forma honesta y fidedigna.</p>
+						<p><br>Al vender en FindInMap, aceptas que:</p>
+						<p><br>1. Ofrece información fidedigna y precisa en tu página de presentación.</p>
+						<p><br>2. Respeta tus Políticas de la tienda.</p>
+						<p><br>3. Representarás fielmente tus artículos en los anuncios y en sus fotografías.</p>
+						<p><br>4. No incurrirás en evasión de tarifas.</p>
+						<p><br>5. No acordarás precios con otros vendedores.</p>
+					</div>
+					<div class="content-usos">
+						<h3>3.  Comunicarse con otros miembros de FindInMap</h3>
+						<h4>Interferencia</h4>
+						<p><br>La interferencia se produce cuando un miembro interfiere intencionadamente con la tienda de otro miembro con el fin de dejarle sin negocio. La interferencia está estrictamente prohibida en FindInMap. Los ejemplos de interferencia incluyen:</p>
+						<p><br>1. Ponerse en contacto con otro miembro mediante Mensajes de FindInMap para persuadirlo de que eviten a otro miembro, tienda, o artículo.</p>
+						<p><br>2. Publicar en áreas públicas para hablar sobre una disputa con otro miembro.</p>
+						<p><br>3. Comprar a un vendedor con el único propósito de dejar una reseña negativa.</p>
+						<p><br>4. Hacer clic maliciosamente en los Anuncios promocionados de otro vendedor con el propósito de agotar el presupuesto en publicidad de ese miembro, también conocido como "fraude de clics".</p>
+						<h4><br>Acoso</h4>
+						<p><br>Se prohíbe terminantemente todo uso de Mensajes de FindInMap para acosar a otros miembros. De forma similar, no podrá usarse Mensajes para apoyar o glorificar grupos de odio, ni violar de cualquier otro modo nuestra política contra la discriminación.</p>
+					</div>
+					<div class="content-usos">
+						<h3>4. Privacidad y protección de la información personal</h3>
+						<p>Eres responsable de proteger la información personal de los miembros que recibas o proceses, y debes cumplir con todos los requisitos legales correspondientes. Esto incluye todas las leyes sobre protección de datos y privacidad aplicables que rigen el uso que puedes hacer de la información de los miembros de FindInMap. Dichas leyes podrían exigir que publiques y cumplas con tu propia política de privacidad, a la que los miembros de FindInMap con los que interactúes deben tener acceso. Asimismo, debe ser compatible con esta política y con las condiciones de uso de FindInMap.</p>
+						<p><br>En concreto, si vendes con nuestros Servicios (sujetos a esta política) o usas la API de FindInMap (sujeta también a las condiciones de uso de la API), puedes recibir determinada información personal y determinar cómo vas a tratarla, como cuando te comunicas con usuarios e inicias transacciones con los compradores. Esto significa que podrías procesar información personal (por ejemplo, nombre del comprador, dirección de correo electrónico y dirección de envío) y que, hasta el extremo en que lo hagas y sujeto a la legislación del Salvador, se te considera controlador de datos independiente con respecto al resto de usuarios que hayas adquirido mediante los Servicios. Eres responsable de proteger la información personal de los usuarios que recibas o proceses, y de cumplir con todos los requisitos legales pertinentes cuando uses los Servicios. Esto incluye las leyes sobre protección de datos y privacidad aplicables que rigen el uso que puedes hacer de la información de un usuario. Dichas leyes podrían exigir que publiques tu propia política de privacidad, a la que los miembros de FindInMap con los que interactúes deben tener acceso, y cumplas con ella. Además, esta debe ser compatible con esta política y con las condiciones de uso de FindInMap. </p>
+						<p><br>En concreto, si vendes con nuestros Servicios (sujetos a esta política) o usas la API de FindInMap (sujeta también a las condiciones de uso de la API), puedes recibir determinada información personal y determinar cómo vas a tratarla, como cuando te comunicas con usuarios e inicias transacciones con los compradores. Esto significa que procesas información personal (como el nombre, la dirección de correo electrónico y la dirección de envío del comprador) y, hasta el extremo que lo hagas, sujeto a la ley de la UE, eres un controlador de datos independiente en relación con el resto de usuarios que hayas podido obtener a través de los Servicios.</p>
+						<p><br>Eres responsable de proteger la información personal que recibas o proceses, y de cumplir con todos los requisitos legales pertinentes cuando uses los Servicios. Esto incluye las leyes sobre protección de datos y privacidad aplicables que rigen el uso que puedes hacer de la información de un usuario. Dichas leyes podrían exigir que publiques tu propia política de privacidad, a la que los miembros de FindInMap con los que interactúes deben tener acceso, y cumplas con ella. Además, esta debe ser compatible con esta política y con las condiciones de uso de FindInMap.</p>
+						<p><br>Como controlador de datos (es decir, alguien que decide qué datos personales se recopilan y para qué se van a usar), hasta el punto que tú procesas información personal del usuario fuera de los Servicios, podrías estar sujeto por las leyes de protección de datos y privacidad aplicables a responder a solicitudes de acceso a los datos, portabilidad, corrección, eliminación y objeciones contra su procesamiento Además, si revelas información personal de un comprador sin su consentimiento, serás responsable de una revelación no autorizada. Esto incluye, por ejemplo, divulgaciones o violaciones de datos no intencionadas. Por ejemplo, podrás recibir la dirección de correo electrónico de un comprador u otra información como resultado de una transacción con ese comprador. Esta información solo puede usarse para las comunicaciones relacionadas con FindInMap o para las transacciones facilitadas por FindInMap. No puedes usar esta información para enviar mensajes comerciales no solicitados o para llevar a cabo transacciones no autorizadas. No podrás añadir a ningún miembro de FindInMap a tu lista de correo electrónico o correo postal, usar la identidad del comprador con fines de marketing u obtener o conservar información de pago alguna sin el consentimiento del comprador, y sujeto a otras políticas de FindInMap y leyes aplicables. Ten en cuenta que eres responsable de conocer el estándar de consentimiento requerido en cualquier circunstancia dada.</p>
+						<p><br>Si FindInMap y tú sois considerados controladores de datos de información personal, y si FindInMap es demandada, multada o incurriera de cualquier otro modo en gastos debido a una acción tuya en calidad de controlador de datos de la información personal del comprador, aceptas indemnizar a FindInMap por los gastos en los que incurra en relación con tu procesamiento de la información personal del comprador.</p>
+					</div>
+					<div class="content-usos">
+						<h3>5. Creación y carga de contenido</h3>
+						<p>Como miembro de FindInMap, tienes la oportunidad de crear y cargar distintos contenidos, como anuncios, mensajes, texto, fotos y vídeos. Para mantener el ambiente de seguridad y respeto en nuestra comunidad, aceptas que no subirás contenido que sea:</p>
+						<p><br>Como miembro de FindInMap, tienes la oportunidad de crear y cargar distintos contenidos, como anuncios, mensajes, texto, fotos y vídeos. Para mantener el ambiente de seguridad y respeto en nuestra comunidad, aceptas que no subirás contenido que sea:</p>
+						<p><br>1. Abusivo, amenazador, difamatorio o acosador, o que viole de cualquier otro modo nuestra política contra la discriminación.</p>
+						<p><br>2. Obsceno o vulga.</p>	
+						<p><br>3. Que viole la privacidad o los derechos de propiedad intelectual de otra persona.</p>
+						<p><br>4. Falso o engañoso.</p>				
+					</div>
+					<div class="content-usos">
+						<h3>6. Prestación de un gran servicio al cliente</h3>
+						<P>Esperamos que los vendedores proporcionen un alto nivel de atención al cliente. Al vender en FindInMap, aceptas:</P>
+						<p><br>1. Respetar tus tiempos de preparación y envío. Los vendedores están obligados a enviar un artículo o a completar una transacción con un comprador de una manera rápida, a menos que existan circunstancias excepcionales.</p>	
+						<p><br>2. Responder a los mensajes en un tiempo razonable.</p>	
+						<p><br>3. Respetar los compromisos establecidos en tus políticas de la tienda.</p>	
+						<p><br>4. Resolver los desacuerdos o conflictos directamente con el comprador. En el improbable caso de que no puedas llegar a una solución, el equipo de Resolución de disputas puede ayudar mediante el sistema de casos.</p>	
+						<p><br>5. Si no puedes completar un pedido, debes notificárselo al comprador y cancelarlo.</p>	
+						<p><br>Como vendedor, debes ofrecer un excelente servicio de atención al cliente y mantener la confianza de tus compradores. Estos requisitos se llaman "estándares de nivel de servicio de los vendedores".</p>
+					</div>
+					<div class="content-usos">
+						<h3>7. Responder a las peticiones de cancelaciones, devoluciones y cambios</h3>
+						<p>Ten en cuenta que, además de esta política, cada país tiene sus propias leyes en materia de envíos, cancelaciones, devoluciones y cambios. Familiarízate con las leyes de tu país y las de los países de tus compradores.</p>
+						<h4><br>Cancelaciones</h4>
+						<p><br>Si no puedes completar una transacción, debes notificárselo al comprador a través de Mensajes de FindInMap y cancelarla. Si el comprador ya ha enviado el pago, debes emitir un reembolso completo. Se aconseja guardar la prueba de cualquier reembolso por si surgiera algún conflicto.</p>
+						<h4><br>Sistema de casos de FindInMap</h4>
+						<p><br>Pedimos a los compradores que se pongan en contacto con los vendedores directamente y traten de resolver los problemas pendientes antes de abrir un caso en FindInMap</p>	
+						<p><br>Los compradores pueden abrir un caso por no entrega o por descripción incorrecta. Debes responder a los casos abiertos en un plazo de tres días o en el periodo que FindInMap indique en el caso. FindInMap podría solicitar tu ayuda para resolver un caso abierto contra tu tienda. FindInMap se reserva el derecho a escalar un caso antes de lo previsto por circunstancias como inactividad del vendedor, acoso, negación del servicio y manipulación del caso, o si se socava la integridad del sistema de casos.</p>
+						<p><br>Al usar el sistema de casos de FindInMap, entiendes que FindInMap podría usar tu información personal para resolver disputas con otros miembros. Se pueden abrir casos en las siguientes circunstancias:</p>	
+						<h4><br>No entrega</h4>
+						<p><br>Los casos por no entrega se producen cuando un comprador hace un pedido y envía el pago, pero no recibe el artículo. Los siguientes son ejemplos de casos por no entrega:</p>
+						<p><br>1. No hay prueba de que el artículo se haya enviado al comprador.</p>	
+						<p><br>2. El artículo no se envió a la dirección que figura en FindInMap.</p>	
+						<h4><br>Descripción incorrecta</h4>	
+						<p><br>El artículo se califica como descripción incorrecta si es sustancialmente diferente al de la descripción o las fotografías del anuncio. Los siguientes son ejemplos de casos por descripción incorrecta:</p>	
+						<p><br>1. El artículo recibido es de distinto color, modelo, versión o tamaño.</p>	
+						<p><br>2. El artículo es de un diseño o material distinto.</p>	
+						<p><br>3. El vendedor no indicó que el artículo estaba dañado o que le faltaban piezas o partes.</p>	
+						<p><br>4. El comprador recibió la cantidad incorrecta de artículos (por ejemplo, compró tres, pero solo recibió dos).</p>	
+						<p><br>5. El artículo se anunciaba como auténtico, pero no lo es.</p>	
+						<p><br>6. El estado del artículo no se representó correctamente (por ejemplo, se describía el artículo como nuevo, pero está usado).</p>	
+						<p><br>También se pueden registrar casos de Descripción incorrecta por retraso en la entrega. Para que se considere como retraso en la entrega, el comprador debe presentar pruebas de que se han cumplido todas estas condiciones:</p>	
+						<p><br>1. Los artículos se pidieron para una fecha o una ocasión concreta.</p>	
+						<p><br>2. Los artículos no son de utilidad una vez pasada dicha fecha límite.</p>	
+						<p><br>3. El vendedor no ha enviado los artículos en el tiempo de preparación estipulado o en la fecha acordada por la herramienta Mensajes.</p>	
+						<p><br>Si FindInMap determina que un artículo no se ajusta a la descripción, deberás reembolsar el importe del pedido, incluyendo el envío original y el importe del envío de devolución.</p>	
+						<h4><br>Transacciones no aptas</h4>	
+						<p><br>No todas las disputas pueden resolverse con el sistema de casos de FindInMap. Estas incluyen:</p>	
+						<p><br>1. Artículos dañados por la compañía de transporte (si iban debidamente embalados y empaquetados).</p>	
+						<p><br>2. Artículos que se han alterado, usado, desgastado, lavado o descartado tras haberlos recibido.</p>	
+						<p><br>3. Artículos recibidos tras la fecha de entrega acordada debido a retrasos en el envío.</p>
+						<p><br>4. Artículos que se han devuelto sin un acuerdo de devolución.</p>	
+						<p><br>5. Artículos cuya descripción es correcta, pero no satisfacen las expectativas del comprador.</p>	
+						<p><br>6. Disputas por los gastos de envío.</p>	
+						<p><br>7. Artículos comprados en persona.</p>	
+						<p><br>8. Artículos cuya venta está prohibida en FindInMap, incluyendo servicios y bienes intangibles.</p>	
+						<p><br>9. Transacciones en las que el pago no se hizo mediante el sistema de pagos de FindInMap.</p>	
+						<p><br>Cuando una disputa no es apta para nuestro sistema de casos, animamos a ambas partes a que trabajen en conjunto para llegar a una solución amistosa.</p>		
+					</div>
+					<hr/>
+					<div>
+						<p><br><br>Ultima actualización 2/12/2019<br><br></p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!--Pie de página-->
+		<footer>
+			<div class="container-footer-all">
+				<div class="container-info-site">
+					<div class="colum1">
+						<h1>Contenido</h1>
+						<div class="row2">
+							<a href=""><img src="../icons/regalo.png"></a>
+							<a href=""><label>Regalos </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/corte.png"></a>
+							<a href=""><label>Cupones</label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/venta.png"></a>
+							<a href=""><label>Ofertas</label></a>
+						</div></div>	
+					<div class="colum2">
+						<h1>Redes Sociales</h1>
+
+						<div class="row2">
+							<a href=""><img src="../icons/facebook.png"></a>
+							<a href=""><label>Facebook </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/twitters.png"></a>
+							<a href=""><label>Twitters </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/whatsapp.png"></a>
+							<a href=""><label>WhatsApp </label></a>
+						</div>
+						<div class="row2">
+							<a href=""><img src="../icons/instagram.png"></a>
+							<a href=""><label>Instagram </label></a>
+						</div></div>
+					<div class="colum3">
+						<h1>Informacion Contactos</h1>
+						<div class="row2">
+							<img src="../icons/digital-map.png">
+							<label>Entre 1° y 3° Calle Norte. Barrio el Centro. calle a San Antonio del monte, Sonsonate, Sonsonate</label>
+						</div>
+						<div class="row2">
+							<img src="../icons/telefono.png">
+							<label>(+503) 7890-5214</label>
+						</div>
+						<div class="row2">
+							<img src="../icons/gmail.png">
+							<label>findinmap58@gmail.com</label>
+						</div></div>
+				</div>
+			</div>
+			<div class="container-footer">
+				<div class="footer">
+					<div class="copyright">2019 Todos los derechos Reservados
+					</div>
+
+					<div class="information">
+						<a href="privacypolicy.html">Políticas de privacidad</a> | <a href="conditionsuses.html">Condiciones de uso</a> | <a href="legaltermns.html">Información legal</a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
