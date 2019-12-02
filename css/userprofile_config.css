@@ -1,0 +1,86 @@
+/*===============PERFIL DE USUARIO=================*/
+	/************header user opciones*************/
+	.user-opt{
+		flex: 0 1 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+		.usr-propiedad{
+			flex: 1 1 auto;
+			display: flex;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+			.usr-propiedad a:hover{
+				text-decoration: underline;
+			}
+		.fav-btn{
+			color: rgb(255,255,255);
+		}
+		.usr-opt{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+			.usr-opt a{
+				color: rgb(255,255,255);
+			}
+	/*********************************************/
+		.container-user{
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column nowrap;
+			padding: 10px;
+		}
+			.datos-usuario{
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: row wrap;
+				padding: 10px;
+			}
+				.imagen-usuario{
+					border-radius: 15px;
+					background-color: rgba(100,100,100,0.5);
+					width: 15%;
+				}
+				.datos{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: column nowrap;
+					padding: 2px;
+				}
+					.nombre-usuario{
+						padding: 5px;
+						font-size: 45px;
+					}
+					.biografia{
+						padding: 5px;
+						font-size: 17px;
+					}
+			.favoritos-usuario{
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column;
+			}
+				.titulo-fav{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row;
+				}
+				.titulo-fav h3{
+					padding: 15px;
+					font-size: 20px;
+					color: rgb(0,0,0);
+					transition: 0.4s;
+				}
+					.titulo-fav h3:hover{
+						transition: 0.3s;
+						background-color: rgb(150,150,150);
+						color: rgb(255,255,255);
+					}
+				.contenido-art-fav{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row;
+				}
+/*=================================================*/

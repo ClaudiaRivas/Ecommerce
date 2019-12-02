@@ -19,7 +19,6 @@
 	<link rel="stylesheet" type="text/css" href="../css/section_organized.css" />
 	<link rel="stylesheet" type="text/css" href="../css/footer_organized.css" />
 	<link rel="stylesheet" type="text/css" href="../css/portraitview_config.css" />
-	<link rel="stylesheet" type="text/css" href="../css/post_config.css" />
 
 	<link rel="stylesheet" type="text/css" href="../sytles/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
@@ -115,7 +114,7 @@
 				<div id="headernavigate">
 					
 					<ul class="nav">
-						<li><a href="">Joyería y cosméticos</a>
+						<li><a href="cat_joyascosm.html">Joyería y cosméticos</a>
 							<ul>
 								<li><a href="">Collares</a></li>
 								<li><a href="">Anillos</a></li>
@@ -123,7 +122,7 @@
 								<li><a href="">Maquillaje</a></li>
 							</ul>
 						</li>
-						<li><a href="">Ropa y calzado</a>
+						<li><a href="cat_ropacalz.html">Ropa y calzado</a>
 							<ul>
 								<li><a href="">Mujer</a></li>
 								<li><a href="">Hombre</a></li>
@@ -131,7 +130,7 @@
 								<li><a href="">Bolsos y monederos</a></li>
 							</ul>
 						</li>
-						<li><a href="">Bodas y fiestas</a>
+						<li><a href="cat_bodafiesta.html" class="borde-act">Bodas y fiestas</a>
 							<ul>
 								<li><a href="">Artículos de fiesta</a></li>
 								<li><a href="">Invitaciones</a></li>
@@ -139,7 +138,7 @@
 								<li><a href="">Ropa para bodas</a></li>
 							</ul>
 						</li>
-						<li><a href="">Decorativos</a>
+						<li><a href="cat_decorativos.html">Decorativos</a>
 							<ul>
 								<li><a href="">Hogar</a></li>
 								<li><a href="">Oficina</a></li>
@@ -147,7 +146,7 @@
 								<li><a href="">Para mascotas</a></li>
 							</ul>
 						</li>
-						<li><a href="">Artículos escolares</a>
+						<li><a href="cat_escolares.html">Artículos escolares</a>
 							<ul>
 								<li><a href="">Cuadernos</a></li>
 								<li><a href="">Mochilas</a></li>
@@ -155,7 +154,7 @@
 								<li><a href="">Papelería</a></li>
 							</ul>
 						</li>
-						<li><a href="">Entretenimiento</a>
+						<li><a href="cat_entretenimiento.html">Entretenimiento</a>
 							<ul>
 								<li><a href="">Libros</a></li>
 								<li><a href="">Juguetes</a></li>
@@ -168,113 +167,214 @@
 		</header>
 
 
+		<!--CONTENIDO DE LA PÁGINA. CADA PUBLICACIÓN QUE APARECERÁ-->
+		<section class="container-posts-catgrs">
+			<div class="titulo-articulos">
+				<h2>Bodas y fiestas</h2>
+			</div>
 
-		<!--CONTENIDO DE LA PUBLICACIÓN-->
-		<section class="container-post">
-			<div class="articulo">
+			<!--CONTENEDOR DE CADA ARTÍCULO-->
+			<div class="articles">
 
-				<!--FOTOGRAFÍAS DEL ARTÍCULO-->
-				<article class="articulo-publicado">
-					<a href="#">
+				<!--CADA ARTÍCULO POR SEPARADO-->
+				<article class="article">
+					<a href="articles.html">
+						
 						<div class="img-muestra">
-							<img src="../imgs/mochila_hombre.jpg">
+								<img src="../imgs/bodas_1.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Traje de bodas...</h4>
+							<p class="vendedor">Tienda con estilo</p>
+							<p class="precio">$47.30</p>
+							<p class="envio">Envío $2.25</p>
 						</div>
 					</a>
 				</article>
+				<article class="article">
+					<a href="#">
 
-				<!--AREA DE COMENTARIOS-->
-				<article class="comentarios-contenedor">
-					<div class="comentario-area">
-						<h3>Comentarios</h3>
-						<form action="articles.html" method="POST" class="comments-area">
-							
-							<!--DATOS DEL USUARIO QUE COMENTARÁ-->
-							<div class="id-usuario">
-								<img src="../icons/userprof.png">
-								<h3>Jorge Almedar</h3>
-							</div>
-							
-							<!--AREA DE TEXTO PARA EL COMENTARIO-->
-							<textarea name="comentar" rows="15" cols="20" class="comment" placeholder="Escribe un comentario..."></textarea>
-							<input type="button" name="imagen" value="Subir imagen..." class="boton-img">
-							<p>Aquí irá la imagen a subir</p>
-							<p>puntuación</p>
-							<input type="submit" name="comentar" value="COMENTAR" class="boton-comentar">
-						</form>
-					</div>
+						<div class="img-muestra">
+							<img src="../imgs/bodas_2.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Traje de bodas...</h4>
+							<p class="vendedor">Tienda El</p>
+							<p class="precio">$49.00</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_5.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Vestido blanco...</h4>
+							<p class="vendedor">Moda Elena</p>
+							<p class="precio">$20.15</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_11.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Docoración de bodas...</h4>
+							<p class="vendedor">Decorando lo ultimo</p>
+							<p class="precio">$95.95</p>
+							<p class="envio">Envío $10</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_8.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Vestido rojo...</h4>
+							<p class="vendedor">Moda Libre</p>
+							<p class="precio">$17.99</p>
+							<p class="envio">Envío $1.75</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_12.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Decoración para bodas...</h4>
+							<p class="vendedor">Fiesteros a mano</p>
+							<p class="precio">$15.99</p>
+							<p class="envio">Envío Gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_3.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Vestido de bodas...</h4>
+							<p class="vendedor">Moda Yo</p>
+							<p class="precio">$77.90</p>
+							<p class="envio">Envío $2.90</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_9.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Invitaciones...</h4>
+							<p class="vendedor">Fiesteros</p>
+							<p class="precio">$5.33</p>
+							<p class="envio">Envío $1.20</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_7.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Vestido...</h4>
+							<p class="vendedor">Tienda Ella</p>
+							<p class="precio">$50.73</p>
+							<p class="envio">Envío gratis</p>
+						</div>
+					</a>
+				</article>
+				<article class="article">
+					<a href="#">
+
+						<div class="img-muestra">
+							<img src="../imgs/bodas_10.jpg">
+						</div>
+						
+						<div class="descript_producto">
+							<h4>Invitación...</h4>
+							<p class="vendedor">Decoraciones</p>
+							<p class="precio">$5.90</p>
+							<p class="envio">Envío $0.75</p>
+						</div>
+					</a>
 				</article>
 			</div>
 
+				<!--BARRA LATERAL DE ACCESOS RÁPIDOS A SUBCATEGORÍAS. Y EL CARRITO-->
+				<aside class="categories">
 
-			<!--AREA PARA LAS DESCRIPCIONES DEL ARTÍCULO EN VENTA-->
-			<aside class="categories">
-
-				<!--CARRITO DE COMPRAS-->
-				<div class="cart-in">
-					<a href="shopcart.html">
-						<img src="../icons/shopcart3.png">
-					</a>
-				</div>
-
-				<!--BOTON DE COMPRAS-->
-				<div class="agregar-boton">
-					<form action="articles.html" method="POST" class="add">
-						<input type="submit" name="add-cart" value="AÑADIR AL CARRITO" class="carrito-button">
-					</form>
-				</div>
-
-
-				<!--AREA PARA DESCRIPCION DEL PRODUCTO GENERAL-->
-				<article class="descripcion-publicado">
-
-					<!--Agregando una descripción del producto-->
-					<div class="descript_producto">
-
-						<!--TIENDA-->
-						<a href="#" class="tienda">Moda escolar</a>
-
-						<!--RESEÑAS-->
-						<p class="stars-review">poner en esta parte reseñas</p>
-
-						<!--TITULO DEL PRODUCTO-->
-						<p class="title-article">Mochila de cuero bordada a mano</p>
-
-						<!--PRECIO-->
-						<p class="precio-article">$5.50</p>
-
-						<!--CANTIDAD-->
-						<p class="titulo-cantidad">Disponibles:</p>
-						<p class="cantidad-article">10</p>
-
-						<!--INFORMACIÓN DEL PRODUCTO-->
-						<div class="descript-prod">
-							<h3>Información del producto</h3>
-							<img src="../icons/amano.png">
-							<p>Hecho a mano</p>
-							<h4 class="title-material">Materiales</h4>
-							<p class="descript-material">cuero, hilo, tela</p>
-
-							<p class="describiendo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						</div>
-
-						<!--PRECIO ENVIO-->
-						<p class="tipo-envio">Tipo envío</p>
-						<select name="ENVIO" class="lista-envio">
-							<option value="1">Comanditas</option>
-							<option value="2">Correos</option>
-						</select>
-
-						<p class="env-pre">Precio envío:</p>
-
-						<p class="envio-precio">$0.50</p>
-
-						<p>Llegará de 1 - 3 horas</p>
+					<!--CARRITO DE COMPRAS. MUESTRA LA CANTIDAD DE ARTÍCULOS EN EL MISMO-->
+					<div class="cart-in">
+						<a href="pages/shopcart.html">
+							<img src="../icons/shopcart3.png">
+						</a>
 					</div>
-				</article>
-			</aside>
+
+
+					<!--LISTA DE ACCESOS DIRECTOS A SUBCATEGORÍAS-->
+					<nav class="cat-menu">
+						<div class="menu-categorias">
+							<a href="#">Moda Mujer</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Moda Hombre</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Decoración</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Artículos escolares</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Calzado</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Entretenimiento</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Artículos para el hogar</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Ocasiones especiales</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Bodas</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Ropa para bebé</a>
+						</div>
+					</nav>
+				</aside>
 		</section>
-
-
 
 		<!--CONTENEDOR DE LOS ARTICULOS SUGERIDOS-->
 		<section class="contenedor-sugeridos">
@@ -335,8 +435,8 @@
 					<div class="colum1">
 						<h1>Contenido</h1>
 						<div class="row2">
-							<a href=""><img src="../icons/regalo.png"></a>
-							<a href=""><label>Regalos </label></a>
+							<a href="regalo.html"><img src="../icons/regalo.png"></a>
+							<a href="regalo.html"><label>Regalos </label></a>
 						</div>
 						<div class="row2">
 							<a href=""><img src="../icons/corte.png"></a>
@@ -345,8 +445,7 @@
 						<div class="row2">
 							<a href=""><img src="../icons/venta.png"></a>
 							<a href=""><label>Ofertas</label></a>
-						</div>
-					</div>	
+						</div></div>	
 					<div class="colum2">
 						<h1>Redes Sociales</h1>
 
@@ -365,13 +464,12 @@
 						<div class="row2">
 							<a href="https://www.instagram.com/anubis.shop44/"><img src="../icons/instagram.png"></a>
 							<a href="https://www.instagram.com/anubis.shop44/"><label>Instagram </label></a>
-						</div>
-					</div>
+						</div></div>
 					<div class="colum3">
 						<h1>Informacion Contactos</h1>
 						<div class="row2">
 							<img src="../icons/digital-map.png">
-							<label>Entre 1° y 3° Calle Norte. Barrio el Centro. calle a San Antonio del monte, Sonsonate, Sonsonate</label>
+							<label> Entre 1° y 3° Calle Norte. Barrio el Centro. calle a San Antonio del monte, Sonsonate, Sonsonate</label>
 						</div>
 						<div class="row2">
 							<img src="../icons/telefono.png">
@@ -380,17 +478,17 @@
 						<div class="row2">
 							<img src="../icons/gmail.png">
 							<label>findinmap58@gmail.com</label>
-						</div>
-					</div>
+						</div></div>
 				</div>
 			</div>
 			<div class="container-footer">
 				<div class="footer">
-					<div class="copyright">2019 Todos los derechos Reservados &copy;
-					</div>
+					<div class="copyright">2019 Todos los derechos Reservados &copy;</div>
 
 					<div class="information">
-						<a href="privacypolicy.html">Políticas de privacidad</a> | <a href="conditionsuses.html">Condiciones de uso</a> | <a href="legaltermns.html">Información legal</a>
+						<a href="pages/privacypolicy.html">Políticas de privacidad</a>
+						| <a href="pages/conditionsuses.html">Condiciones de uso</a>
+						| <a href="pages/legaltermns.html">Información legal   </a>
 					</div>
 
 				</div>

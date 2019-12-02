@@ -1,0 +1,17 @@
+/*================CARRITO DE COMPRAS===============*/
+		.container{
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: row nowrap;
+			text-align: center;
+			padding: 20px;
+		}
+		.content-carrito{
+			padding: 20px;
+			background-color: rgb(50,50,50);
+			width: 100%;
+		}
+		.carrito-compras-estado{
+			color: #fff;
+		}
+/*=================================================*/

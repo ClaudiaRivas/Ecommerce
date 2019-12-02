@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!--CABECERA DEL DOCUMENTO. CONTIENE TODAS LAS RUTAS A LOS ARCHIVOS EXTERNOS QUE LE DAN ESTILO Y COMPORTAMIENTO-->
 <head>
-	<meta charset="utf-8">
+	<!--AREA DE LOS METADATOS-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+	<!--TÍTULO DEL DOCUMENTO QUE APARECERÁ EN LAS PESTAÑAS DEL NAVEGADOR-->
 	<title>FindInMap</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!--ENLACES A LOS ARCHIVOS QUE LE DAN ESTILO Y COMPORTAMIENTO AL DOCUMENTO-->
 	<link rel="icon" type="image/png" href="icons/mapa.png">
+
+	<!--ESTILOS-->
+	<link rel="stylesheet" type="text/css" href="css/general_config.css" />
+	<link rel="stylesheet" type="text/css" href="css/header_nosession.css" />
+	<link rel="stylesheet" type="text/css" href="css/section_organized.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer_organized.css" />
+	<link rel="stylesheet" type="text/css" href="css/portraitview_config.css" />
+
 	<link rel="stylesheet" type="text/css" href="sytles/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css" href="styles/estilo.css">
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/fontello.css">
+
+	<!--SCRIPTS-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/actions.js"></script>
 </head>
+
+<!--CUERPO DEL DOCUMENTO. DONDE SE ORGANIZA TODA LA INFORMACIÓN QUE SE MOSTRARÁ-->
 <body>
+	<!--BOTON PARA SUBIR-->
 	<div class="up">
-		<span> <img src="icons/arriba.png"/></span>
+		<span>
+			<img src="icons/arriba.png"/>
+		</span>
 	</div>
 
-	<!--Contenedor de nuestra página web-->
+	<!--CONTENEDOR PARA LOS ELEMENTOS DEL DOCUMENTO. DESDE EL HEADER HASTA EL FOOTER-->
 	<div class="container-body">
-		<!--Menu-->
+		
+		<!--MENU HEADER-->
 		<header class="container-navigation">
+
+			<!--CONTENEDOR PARA CADA ELEMENTO-->
 			<div class="menu-container">
+
+				<!--LOGO DEL SITIO-->
 				<div class="logo">
 					<div class="contenedor-logo">
-						<a href="index.html"><img src="icons/mapa.png"/></a>
+						<a href="index.html">
+							<!--DIRECTORIO DEL LOGO-->
+							<img src="icons/mapa.png"/>
+						</a>
 					</div>
 				</div>
+
+				<!--BUSCADOR DEL SITIO-->
 				<div class="browse">
 					<div class="insert">
 						<form method="POST" class="form-busqueda">
@@ -34,6 +67,8 @@
 						</form>
 					</div>
 				</div>
+
+				<!--ACCESO A CUENTAS DE USUARIO-->
 				<section>
 					<div class="account">
 						<div class="account-propiedad">
@@ -42,36 +77,44 @@
 						</div>
 					</div>
 				</section>
+
+				<!--REGISTRO Y LOGIN-->
+
+				<!--LOGIN-->
 				<div class="login" id="login">
 					<a href="" class="cerrar" id="cerrar"> <img src="icons/error.png"/><i class="fa fa-times" aria-hidden="true"></i></a>
 					<form>
 						<input type="text" required placeholder="Usuario">
 						<input type="password" requered placeholder="********">
-						<input type="button" value="Entrar" >
+						<input type="submit" value="Entrar" >
 					</form>
 				</div>
+
+				<!--REGISTRO-->
 				<div class="oscurecer" id="oscurecer"></div>
 				<div class="registrar" id="registrar">
-					<div class="cerrarRegistro" id="cerrarRegistro">x</div>
+					<div class="cerrarRegistro" id="cerrarRegistro"><img src="icons/error.png"/></div>
 					<h1>Registro</h1>
 					<form action="">
 						<input type="text" placeholder="Nombre">
 						<input type="text" placeholder="Correo">
 						<input type="password" placeholder="Contraseña">
-						<input type="button" value="Crear">
+						<input type="submit" value="Crear">
 					</form>
 				</div>
-				<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-	            <script type="text/javascript" src="js/actions.js"></script>
+				
+				<!--CARRITO DE COMPRAS-->
 				<div class="cart">
-					<a href="pages/shopcart.html"><img src="icons/carrito.png"></a>
+					<a href="pages/shopcart.html">
+						<img src="icons/carrito.png">
+					</a>
 				</div>
 
-				<!--El menu que contendrá las categorías a escoger-->
+				<!--MENÚ CON TODAS LAS CATEGORÍAS A ESCOGER-->
 				<div id="headernavigate">
 					
 					<ul class="nav">
-						<li><a href="">Joyería y cosméticos</a>
+						<li><a href="pages/cat_joyascosm.html" class="borde-des">Joyería y cosméticos</a>
 							<ul>
 								<li><a href="">Collares</a></li>
 								<li><a href="">Anillos</a></li>
@@ -79,7 +122,7 @@
 								<li><a href="">Maquillaje</a></li>
 							</ul>
 						</li>
-						<li><a href="">Ropa y calzado</a>
+						<li><a href="pages/cat_ropacalz.html" class="borde-des">Ropa y calzado</a>
 							<ul>
 								<li><a href="">Mujer</a></li>
 								<li><a href="">Hombre</a></li>
@@ -87,7 +130,7 @@
 								<li><a href="">Bolsos y monederos</a></li>
 							</ul>
 						</li>
-						<li><a href="">Bodas y fiestas</a>
+						<li><a href="pages/cat_bodafiesta.html" class="borde-des">Bodas y fiestas</a>
 							<ul>
 								<li><a href="">Artículos de fiesta</a></li>
 								<li><a href="">Invitaciones</a></li>
@@ -95,7 +138,7 @@
 								<li><a href="">Ropa para bodas</a></li>
 							</ul>
 						</li>
-						<li><a href="">Decorativos</a>
+						<li><a href="pages/cat_decorativos.html" class="borde-des">Decorativos</a>
 							<ul>
 								<li><a href="">Hogar</a></li>
 								<li><a href="">Oficina</a></li>
@@ -103,7 +146,7 @@
 								<li><a href="">Para mascotas</a></li>
 							</ul>
 						</li>
-						<li><a href="">Artículos escolares</a>
+						<li><a href="pages/cat_escolares.html" class="borde-des">Artículos escolares</a>
 							<ul>
 								<li><a href="">Cuadernos</a></li>
 								<li><a href="">Mochilas</a></li>
@@ -111,7 +154,7 @@
 								<li><a href="">Papelería</a></li>
 							</ul>
 						</li>
-						<li><a href="">Entretenimiento</a>
+						<li><a href="pages/cat_entretenimiento.html" class="borde-des">Entretenimiento</a>
 							<ul>
 								<li><a href="">Libros</a></li>
 								<li><a href="">Juguetes</a></li>
@@ -122,19 +165,25 @@
 					</ul>
 				</div>
 		</header>
-		<!--Contenido de la página, por categoría de publicaciones-->
+
+
+		<!--CONTENIDO DE LA PÁGINA. CADA PUBLICACIÓN QUE APARECERÁ-->
 		<section class="container-posts-catgrs">
+			<div class="titulo-articulos">
+				<h2>Lo más vendido</h2>
+			</div>
+
+			<!--CONTENEDOR DE CADA ARTÍCULO-->
 			<div class="articles">
-				<div class="titulo-articulos">
-					<br><br><h2>Lo más vendido</h2><br>
-				</div>
+
+				<!--CADA ARTÍCULO POR SEPARADO-->
 				<article class="article">
 					<a href="pages/articles.html">
-						<!--Integramos el primer artículo en venta-->
+						
 						<div class="img-muestra">
 								<img src="imgs/mochila_hombre.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Mochila de cuero...</h4>
 							<p class="vendedor">Moda escolar</p>
@@ -145,10 +194,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/estuche_geometry.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Estuche de geo...</h4>
 							<p class="vendedor">Librería el estudiante</p>
@@ -159,10 +209,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/lapicerobic.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Lapiceros Bic...</h4>
 							<p class="vendedor">Librería el estudiante</p>
@@ -173,10 +224,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/pantalones_hombre.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Pantalones...</h4>
 							<p class="vendedor">Moda libre</p>
@@ -187,10 +239,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/falda.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Falda corta...</h4>
 							<p class="vendedor">Moda libre</p>
@@ -201,10 +254,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/zapatos_mujer.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Tacones elegantes...</h4>
 							<p class="vendedor">Zapatería Lola</p>
@@ -215,10 +269,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/zapatos_hombre.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Zapatos formales...</h4>
 							<p class="vendedor">Zapatería Lola</p>
@@ -229,10 +284,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/pelo_claus.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Adorno de Santa Claus...</h4>
 							<p class="vendedor">Decoraciones Eva</p>
@@ -243,10 +299,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/escoba_claus.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Funda de Santa Claus para...</h4>
 							<p class="vendedor">Decoraciones Eva</p>
@@ -257,10 +314,11 @@
 				</article>
 				<article class="article">
 					<a href="#">
+
 						<div class="img-muestra">
 							<img src="imgs/cremas_natural.jpg">
 						</div>
-						<!--Agregando una descripción del producto-->
+						
 						<div class="descript_producto">
 							<h4>Crema humectante natural...</h4>
 							<p class="vendedor">Living Health</p>
@@ -269,109 +327,106 @@
 						</div>
 					</a>
 				</article>
-
-
-				<!--El menú para cambiar de página y saber en cuál estamos-->
-				<hr>
-				<br>
-				<div class="titulo-seleccion">
-									
-				<br><h2>Descubre regalos</h2><br>
-				</div>
-				<nav class="selpage">
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="imgs/maquillaje.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Cosméticos</h5>
-							</div>
-						</a>
-					</div>
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="imgs/decoracion_navidad.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Decoraciones navideñas</h5>
-							</div>
-						</a>
-					</div>
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="imgs/decoracion_claus.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Hechos a mano</h5>
-							</div>
-						</a>
-					</div>
-					<div class="imagen-regalos">
-						<a href="#">
-							<div class="img-gift">
-								<img src="imgs/sudadera.jpg">
-							</div>
-							<div class="desc-gift">
-								<h5>Ropa ocasional</h5>
-							</div>
-						</a>
-					</div>
-				</nav>
-				<br>
-				<br>
 			</div>
 
+				<!--BARRA LATERAL DE ACCESOS RÁPIDOS A SUBCATEGORÍAS. Y EL CARRITO-->
+				<aside class="categories">
 
-			<!--Barra lateral con las categorías-->
-			<aside class="categories">
-				<div class="cart-in">
-					<a href="pages/shopcart.html"><img src="icons/shopcart3.png"></a>
-				</div>
-				<div class="busqueda">
-					<div class="buscando-otr">
-						<form method="POST" class="form-buscador-lat">
-							<input type="search" name="busque" class="buscador" placeholder="Quiero...">
-							<input type="button" name="buscado" value="Buscar" class="boton-buscado">
-						</form>
+					<!--CARRITO DE COMPRAS. MUESTRA LA CANTIDAD DE ARTÍCULOS EN EL MISMO-->
+					<div class="cart-in">
+						<a href="pages/shopcart.html">
+							<img src="icons/shopcart3.png">
+						</a>
 					</div>
-				</div>
-				<nav class="cat-menu">
-					<div class="menu-categorias">
-						<a href="#">Moda Mujer</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Moda Hombre</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Decoración</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Artículos escolares</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Calzado</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Entretenimiento</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Artículos para el hogar</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Ocasiones especiales</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Bodas</a>
-					</div>
-					<div class="menu-categorias">
-						<a href="#">Ropa para bebé</a>
-					</div>
-				</nav>
-			</aside>
+
+
+					<!--LISTA DE ACCESOS DIRECTOS A SUBCATEGORÍAS-->
+					<nav class="cat-menu">
+						<div class="menu-categorias">
+							<a href="#">Moda Mujer</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Moda Hombre</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Decoración</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Artículos escolares</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Calzado</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Entretenimiento</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Artículos para el hogar</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Ocasiones especiales</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Bodas</a>
+						</div>
+						<div class="menu-categorias">
+							<a href="#">Ropa para bebé</a>
+						</div>
+					</nav>
+				</aside>
 		</section>
+
+		<!--CONTENEDOR DE LOS ARTICULOS SUGERIDOS-->
+		<section class="contenedor-sugeridos">
+
+			<!--AREA DE REGALOS Y SUGERIDOS-->
+			<div class="titulo-seleccion">
+				<h2>Descubre regalos</h2>
+			</div>
+			<nav class="selpage">
+				<div class="imagen-regalos">
+					<a href="#">
+						<div class="img-gift">
+							<img src="imgs/maquillaje.jpg">
+						</div>
+						<div class="desc-gift">
+							<h5>Cosméticos</h5>
+						</div>
+					</a>
+				</div>
+				<div class="imagen-regalos">
+					<a href="#">
+						<div class="img-gift">
+							<img src="imgs/decoracion_navidad.jpg">
+						</div>
+						<div class="desc-gift">
+							<h5>Decoraciones navideñas</h5>
+						</div>
+					</a>
+				</div>
+				<div class="imagen-regalos">
+					<a href="#">
+						<div class="img-gift">
+							<img src="imgs/decoracion_claus.jpg">
+						</div>
+						<div class="desc-gift">
+							<h5>Hechos a mano</h5>
+						</div>
+					</a>
+				</div>
+				<div class="imagen-regalos">
+					<a href="#">
+						<div class="img-gift">
+							<img src="imgs/sudadera.jpg">
+						</div>
+						<div class="desc-gift">
+							<h5>Ropa ocasional</h5>
+						</div>
+					</a>
+				</div>
+			</nav>
+		</section>
+
 
 		<!--Pie de página-->
 		<footer>
@@ -428,11 +483,12 @@
 			</div>
 			<div class="container-footer">
 				<div class="footer">
-					<div class="copyright">2019 Todos los derechos Reservados &copy;
-					</div>
+					<div class="copyright">2019 Todos los derechos Reservados &copy;</div>
 
 					<div class="information">
-						<a href="pages/privacypolicy.html">Políticas de privacidad</a> | <a href="pages/conditionsuses.html">Condiciones de uso</a> | <a href="pages/legaltermns.html">Información legal   </a>
+						<a href="pages/privacypolicy.html">Políticas de privacidad</a>
+						| <a href="pages/conditionsuses.html">Condiciones de uso</a>
+						| <a href="pages/legaltermns.html">Información legal   </a>
 					</div>
 
 				</div>

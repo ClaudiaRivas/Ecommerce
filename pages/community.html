@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!--CABECERA DEL DOCUMENTO. CONTIENE TODAS LAS RUTAS A LOS ARCHIVOS EXTERNOS QUE LE DAN ESTILO Y COMPORTAMIENTO-->
 <head>
-	<meta charset="utf-8">
+	<!--AREA DE LOS METADATOS-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+	<!--TÍTULO DEL DOCUMENTO QUE APARECERÁ EN LAS PESTAÑAS DEL NAVEGADOR-->
 	<title>FindInMap</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!--ENLACES A LOS ARCHIVOS QUE LE DAN ESTILO Y COMPORTAMIENTO AL DOCUMENTO-->
 	<link rel="icon" type="image/png" href="../icons/mapa.png">
+
+	<!--ESTILOS-->
+	<link rel="stylesheet" type="text/css" href="../css/general_config.css" />
+	<link rel="stylesheet" type="text/css" href="../css/header_nosession.css" />
+	<link rel="stylesheet" type="text/css" href="../css/section_organized.css" />
+	<link rel="stylesheet" type="text/css" href="../css/footer_organized.css" />
+	<link rel="stylesheet" type="text/css" href="../css/portraitview_config.css" />
+	<link rel="stylesheet" type="text/css" href="../css/community_policy_config.css" />
+
 	<link rel="stylesheet" type="text/css" href="../sytles/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../styles/estilo.css">
 	<link rel="stylesheet" type="text/css" href="../styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../styles/fontello.css">
+
+	<!--SCRIPTS-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="../js/actions.js"></script>
 </head>
+
+<!--CUERPO DEL DOCUMENTO. DONDE SE ORGANIZA TODA LA INFORMACIÓN QUE SE MOSTRARÁ-->
 <body>
+	<!--BOTON PARA SUBIR-->
 	<div class="up">
-		<span> <img src="../icons/arriba.png"/></span>
+		<span>
+			<img src="../icons/arriba.png"/>
+		</span>
 	</div>
 
-	<!--Contenedor de nuestra página web-->
+	<!--CONTENEDOR PARA LOS ELEMENTOS DEL DOCUMENTO. DESDE EL HEADER HASTA EL FOOTER-->
 	<div class="container-body">
-		<!--Menu-->
+		
+		<!--MENU HEADER-->
 		<header class="container-navigation">
+
+			<!--CONTENEDOR PARA CADA ELEMENTO-->
 			<div class="menu-container">
+
+				<!--LOGO DEL SITIO-->
 				<div class="logo">
 					<div class="contenedor-logo">
-						<a href="../index.html"><img src="../icons/mapa.png"/></a>
+						<a href="../index.html">
+							<!--DIRECTORIO DEL LOGO-->
+							<img src="../icons/mapa.png"/>
+						</a>
 					</div>
 				</div>
+
+				<!--BUSCADOR DEL SITIO-->
 				<div class="browse">
 					<div class="insert">
 						<form method="POST" class="form-busqueda">
@@ -34,6 +68,8 @@
 						</form>
 					</div>
 				</div>
+
+				<!--ACCESO A CUENTAS DE USUARIO-->
 				<section>
 					<div class="account">
 						<div class="account-propiedad">
@@ -42,32 +78,40 @@
 						</div>
 					</div>
 				</section>
+
+				<!--REGISTRO Y LOGIN-->
+
+				<!--LOGIN-->
 				<div class="login" id="login">
-					<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<a href="" class="cerrar" id="cerrar"> <img src="../icons/error.png"/><i class="fa fa-times" aria-hidden="true"></i></a>
 					<form>
 						<input type="text" required placeholder="Usuario">
 						<input type="password" requered placeholder="********">
-						<input type="button" value="Entrar" >
+						<input type="submit" value="Entrar" >
 					</form>
 				</div>
+
+				<!--REGISTRO-->
 				<div class="oscurecer" id="oscurecer"></div>
 				<div class="registrar" id="registrar">
-					<div class="cerrarRegistro" id="cerrarRegistro">x</div>
+					<div class="cerrarRegistro" id="cerrarRegistro"><img src="../icons/error.png"/></div>
 					<h1>Registro</h1>
 					<form action="">
 						<input type="text" placeholder="Nombre">
 						<input type="text" placeholder="Correo">
 						<input type="password" placeholder="Contraseña">
-						<input type="button" value="Crear">
+						<input type="submit" value="Crear">
 					</form>
 				</div>
-				<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
-	            <script type="text/javascript" src="../js/actions.js"></script>
+				
+				<!--CARRITO DE COMPRAS-->
 				<div class="cart">
-					<a href="pages/shopcart.html"><img src="../icons/carrito.png"></a>
+					<a href="pages/shopcart.html">
+						<img src="../icons/carrito.png">
+					</a>
 				</div>
 
-				<!--El menu que contendrá las categorías a escoger-->
+				<!--MENÚ CON TODAS LAS CATEGORÍAS A ESCOGER-->
 				<div id="headernavigate">
 					
 					<ul class="nav">
@@ -223,7 +267,9 @@
 					</div>
 
 					<div class="information">
-						<a href="privacypolicy.html">Políticas de privacidad</a> | <a href="conditionsuses.html">Condiciones de uso</a> | <a href="legaltermns.html">Información legal</a>
+						<a href="privacypolicy.html">Políticas de privacidad</a>
+						| <a href="conditionsuses.html">Condiciones de uso</a>
+						| <a href="legaltermns.html">Información legal</a>
 					</div>
 
 				</div>

@@ -1,0 +1,187 @@
+/****CONTENEDOR DE LAS PUBLICACIONES****/
+.container-posts-catgrs{
+	flex: 1 1 auto;
+	flex-flow: row wrap;
+	display: flex;
+	padding: 11px;
+}
+/****ATRIBUTOS DEL TÍTULO PARA PUBLICACIONES MÁS VENDIDAS****/
+.titulo-articulos{
+	flex: 1 1 100%;
+	flex-flow: column wrap;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+}
+.titulo-articulos h2{
+	text-aling: center;
+	font-size: 32px;
+	padding: 5px;
+	margin: 0px;
+}
+
+	/****CONTENIDO DE LAS PUBLICACIONES****/
+	.articles{
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		width: 70%;
+	}
+		/****CONTENIDOS****/
+		.article{
+			flex: 2 1 20%;
+			padding: 10px;
+			transition: background-color 0.7s;
+			transition: 0.3s ease-in-out;
+		}
+			.article:hover{
+				box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+				transition: 0.3s ease;
+				background-color: rgba(255,185,47,0.3);
+				transform: translateY(-3px) scale(1.0);
+			}
+			.article a{
+				color: #000;
+			}
+			/****ATRIBUTOS DE LA IMAGEN DEL ARTICULO EN VENTA****/
+			.img-muestra{
+				margin: 0px;
+				padding: 0px;
+			}
+			.img-muestra img{
+				background-position: center;
+				background-attachment: contain;
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			.vendedor{
+				color: rgba(0,0,0,0.5);
+				font-size: 13px;
+			}
+			.precio{
+				color: rgba(40,200,10,0.8);
+				font-size: 18px;
+				font-style: italic;
+			}
+			.envio{
+				color: rgba(220,40,20,0.8);
+				font-size: 15px;
+			}
+
+	
+/****ATRIBUTOS PARA LA BARRA LATERAL****/
+	.categories{
+		flex: 1 1 auto;
+		align-items: center;
+		flex-flow: column wrap;
+		padding: 0px;
+		margin: 0px;
+		width: 30%;
+	}
+		/****ATRIBUTOS PARA EL CARRITO DE COMPRAS*/
+		.cart-in{
+			flex: 1 1 auto;
+			flex-flow: column nowrap;
+			display: flex;
+			margin: 0px;
+			padding: 0px;
+			align-items: center;
+		}
+		.cart-in a{
+			padding: 5px;
+			border-bottom: 1px solid gray;
+			border-top: 1px solid gray;
+		}
+		.cart-in a img{
+			display: flex;
+			margin: 0px ;
+			padding: 5px;
+		}
+
+		/****ATRIBUTOS DE LA LISTA DE SUBCATEGORÍAS*/
+		.cat-menu{
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+		}
+			.menu-categorias{
+				flex: 1 1 auto;
+				padding: 12px 0px 12px 0px;
+			}
+				.menu-categorias a{
+					color: #000;
+					font-size: 13px;
+					text-transform: uppercase;
+					margin: 0px;
+					padding: 5px 3px 5px 3px;
+					letter-spacing: 1px;
+					transition: 0.2s;
+				}
+				.menu-categorias a:hover{
+					transition: 0.3s;
+					color: rgb(122,168,2);
+					font-weight: bold;
+				}
+
+
+/****ATRIBUTOS PARA LOS REGALOS Y SUGERIDOS****/
+.contenedor-sugeridos{
+	flex: 1 1 auto;
+	flex-flow: row wrap;
+	display: flex;
+	padding: 11px;
+}
+		/****ATRIBUTOS PARA EL TÍTULO****/
+		.titulo-seleccion{
+			flex: 1 1 100%;
+			flex-flow: column wrap;
+			display: flex;
+			padding: 10px;
+			align-items: center;
+		}
+		.titulo-seleccion h2{
+			ext-aling: center;
+			font-size: 32px;
+			padding: 5px;
+			margin: 0px;
+		}
+
+		/****ATRIBUTOS PARA CADA ELEMENTO DE SUGERIDOS****/
+		.selpage{
+			flex: 2 1 auto;
+			align-items: center;
+			flex-flow: row nowrap;
+			display: inline-flex;
+		}
+			.imagen-regalos{
+				flex: 1 1 100%;
+				margin: 0px;
+				padding: 5px;
+				transition: 0.3s ease-in-out;
+			}
+				.imagen-regalos:hover{
+					box-shadow: 0px 0px 2px 2px rgba(50,50,50,0.3);
+					transition: 0.2s ease;
+				}
+				.desc-gift{
+					text-align: center;
+					font-size: 17px;
+				}
+			.selpage a{
+				color: #000;
+				margin: 0px;
+				padding: 0px;
+			}
+			.selpage img{
+				background-position: center;
+				background-attachment: contain;
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				padding: 3px;
+				margin: 2px;
+			}

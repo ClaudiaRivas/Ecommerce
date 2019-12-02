@@ -1,0 +1,80 @@
+/*Configuramos el tamaño hasta el cual se ordenarán uno sobre otro en la pantalla
+Para los contenedores principales*/	
+@media screen and (max-width: 1100px){
+		.container-info-site{
+			flex-wrap: wrap;
+		}
+		.container-navigation{
+			flex-wrap: wrap;
+		}
+
+		.colum1{
+			max-width: 100%;
+		}
+		.colum2,
+		.colum3{
+			margin-top: 40px;
+		}
+	}
+@media all and (max-width: 800px){
+	.container-posts-catgrs{
+		flex-direction: column;
+	}
+	.menu-container{
+		flex-direction: column;
+		height: auto;
+	}
+		.logo{
+			flex-direction: row;
+			height: auto;
+			width: 40%;
+		}
+		.browse{
+			flex-direction: row;
+			height: auto;
+			width: 60%;
+		}
+		.account{
+			flex-direction: row;
+			height: auto;
+			width: 40%;
+		}
+		.cart{
+			flex-direction: row;
+			height: auto;
+			width: 30%;
+		}
+		.navigate{
+			flex-direction: row;
+			height: auto;
+			width: 90%;
+		}
+	.categories{
+		display: flex;
+		justify-content: center;
+	}
+		.cart-in{
+			flex-direction: row;
+			height: auto;
+			width: 90%;
+		}
+		.cat-menu{
+			flex-direction: row;
+			height: auto;
+			width: 90%;
+		}
+}
+
+/*Configuración del tamaño máximo en el que se ordenarán uno sobre otro en pantalla
+para los contenidos internos*/
+@media all and (max-width: 600px){
+	.articles{
+		flex-direction: column;
+	}
+}
+
+@media all and (max-width: 400px){
+	.categories{
+		flex-direction: column;
+	}
+}
