@@ -188,10 +188,6 @@ body{
 				display: block;
 			}
 
-
-
-
-
 	/*Nodo hijo: contenido*/
 	.container-posts-catgrs{
 		display: flex;
@@ -206,6 +202,7 @@ body{
 			/*Atributos de la caja de cada publicación individual*/
 			.titulo-articulos{
 				flex: 1 1 100%;
+				text-align: center;
 			}
 			.article{
 				flex: 2 1 20%;
@@ -253,6 +250,7 @@ body{
 			/*Atributos para el menú de la página en la que estamos y las que tiene el sitio*/
 			.titulo-seleccion{
 				flex: 1 1 100%;
+				text-align: center;
 			}
 			.selpage{
 				flex: 2 1 auto;
@@ -1209,7 +1207,7 @@ input {
 	outline: 0;
 }
 input[type="button"]{
-	background: blue;
+	background: #1DDF49;
 	cursor: pointer;
 	color: #fff;
 }
@@ -1223,8 +1221,7 @@ input[type="button"]:hover{
 	border-radius: 50%;
 	display: inline-block;
 	float: right;
-	color: #fff;
-	background: #ccc;
+
 }
 .oscurecer {
 	position: fixed;
@@ -1255,7 +1252,9 @@ input[type="button"]:hover{
 	width: 100%;
 	padding: 1em;
 	margin-bottom: 10px;
+	background: #1DDF49;
 }
+
 .cerrarRegistro {
 	position: absolute;
 	top: -5px;
