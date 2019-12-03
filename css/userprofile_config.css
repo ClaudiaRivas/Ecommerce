@@ -155,4 +155,102 @@
 								}
 /*===================================================*/
 /*****AREA PARA ESTILOS DE LA PÁGINA DEL VENDEDOR*****/
+.container-vendedor-usr{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 10px;
+}
 
+	/****ESTILO PARA EL ÁREA DE LOS DATOS DE LA TIENDA****/
+	.datos-usuario-vendedor{
+
+	}
+		/****IMÁGEN DE LA TIENDA****/
+		.imagen-tienda{
+
+		}
+		/****DATOS DEL USUARIO****/
+		.datos{
+
+		}
+			.nombre-tienda{
+
+			}
+			.datos-tienda{
+
+			}
+
+	/****CONTENEDOR DE LOS DATOS DE VENTAS Y ESTADISTICAS EN LA TIENDA****/
+	.productos-ventas-pagos{
+
+	}
+
+	/****AREA DE ESTILOS DE LOS DATOS DE VENTA (TOTAL VENDIDO, EL MÁS VENDIDO, ETC.)****/
+	.titulo-ventas{
+
+	}
+	.contenido-ventas{
+
+	}
+
+	/****ÁREA DE ESTILOS DE LOS DATOS DE LOS PRODUCTOS VISTOS*/
+	.titulo-estadistica{
+
+	}
+	.contenido-estats{
+
+	}
+
+	/****ÁREA DE ESTILOS PARA MOSTRAR LOS PAGOS QUE LA TIENDA TENGA QUE REALIZAR (DEUDAS, ETC)****/
+	.titulo-pagos{
+
+	}
+	.contenido-pagos{
+
+	}
+		.deuda-promo{
+
+		}
+		.deuda-venta{
+
+		}
+
+	/****ÁREA DE ESTILOS PARA MOSTRAR LOS CUPONES QUE HE EMITIDO****/
+	.titulo-cupones{
+
+	}
+	.contenido-cupon{
+		
+	}
+
+		/****PRODUCTOS PUBLICADOS (CADA PRODUCTO MOSTRARÁ TODOS SUS DATOS AL LADO DE LA IMÁGEN)****/
+		/****TÍTULO****/
+		.titulo-productos{
+
+		}
+		/****CONTENEDOR DE LOS PRODUCTOS****/
+		.contenido-productos{
+
+		}
+			.mi-prod{
+
+			}
+				.article-prod{
+
+				}
+					.img-prod{
+
+					}
+					.img-prod img{
+
+					}
+					.descript-prod{
+
+					}
+						.precio-fav{
+
+						}
+						.envio-fav{
+
+						}
