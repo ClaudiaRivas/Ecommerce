@@ -39,10 +39,15 @@ Para los contenedores principales*/
 			height: auto;
 			width: 40%;
 		}
+		.usr-propiedad{
+			flex-direction: row;
+			height: auto;
+			width: 40%;
+		}
 		.cart{
 			flex-direction: row;
 			height: auto;
-			width: 30%;
+			width: 20%;
 		}
 		.navigate{
 			flex-direction: row;

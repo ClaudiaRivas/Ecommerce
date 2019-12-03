@@ -141,39 +141,70 @@
 
 
 		<!--CONTENIDO DEL PERFIL DE USUARIO-->
-		<section class="container-user">
-			<div class="datos-usuario">
-				<img src="../icons/user-profile.png"  class="imagen-usuario">
+		<section class="container-vendedor-usr">
+			<div class="datos-usuario-vendedor">
+				<img src="../icons/user-profile.png"  class="imagen-tienda">
 				<div class="datos">
-					<div class="nombre-usuario">
+					<div class="nombre-tienda">
 						<p>Roberto Gomez</p>
 					</div>
-					<div class="biografia">
-						<p>Soy un amante de los zapatos deportivos</p>
+					<div class="datos-tienda">
+						<p>Dirección</p>
+						<p>Teléfono</p>
+						<p>NIT</p>
+						<p>Tipos de pago</p>
 					</div>
 				</div>
 			</div>
-			<div class="favoritos-usuario">
-				<div class="titulo-fav">
-					<a href="">
-						<h3>Articulos Favoritos</h3>
-					</a>
+
+			<!--CONTENEDOR DE LOS PRODUCTOS, VENTAS Y DEUDAS EN LA TIENDA-->
+			<div class="productos-ventas-pagos">
+
+				<!--AREA DE LOS PRODUCTOS PUBLICADOS-->
+				<div class="titulo-productos">
+					<h3>Mis productos</h3>
+					<h3>Nuevo producto</h3>
 				</div>
-				<div class="contenido-art-fav">
-					<div class="articles-fav">
-						<article class="article-fav">
+				<div class="contenido-productos">
+					<div class="mi-prod">
+						<article class="article-prod">
 							<a href="">
-								<div class="img-muestra-fav">
+								<div class="img-prod">
 									<img src="../imgs/deportivos.jpg">
 								</div>
-								<div class="descript_producto-fav">
+								<div class="descript-prod">
 									<h4>Zapatillas deportivas...</h4>
-									<p class="vendedor-fav">Zapatería Lola</p>
 									<p class="precio-fav">$10.45</p>
 									<p class="envio-fav">Envío gratuito</p>
 								</div>
 							</a>
 						</article>
+					</div>
+				</div>
+
+				<!--AREA DE DETALLE DE VENTAS TOTALES EN PRODUCTOS DE LA TIENDA-->
+				<div class="titulo-ventas">
+					<h3>Mis ventas</h3>
+				</div>
+				<div class="contenido-ventas">
+					<p>Producto más vendido</p>
+					<p>ventas totales</p>
+					<p>cantidad de productos vendidos</p>
+					<p>fechas en las que se vendió</p>
+				</div>
+
+				<!--AREA DE DEUDAS DE LA TIENDA CON LA PLATAFORMA-->
+				<div class="titulo-pagos">
+					<h3>Pagos en la plataforma</h3>
+				</div>
+				<div class="contenido-pagos">
+					<div class="deuda-promo">
+						<p>debes tanto por publicación del mes pasado</p>
+						<p>paga antes del día</p>
+					</div>
+					<div class="deuda-venta">
+						<p>debes tanto por ventas del mes pasado</p>
+						<p>paga antes del día</p>
 					</div>
 				</div>
 			</div>

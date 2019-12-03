@@ -1,20 +1,31 @@
 /*===============PERFIL DE USUARIO=================*/
 	/************header user opciones*************/
+.usr-propiedad{
+	flex: 0 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0px;
+	margin: 0px;
+}
+	.usr-propiedad a{
+		color: rgb(255,255,255);
+		border-radius: 10px;
+		padding: 10px;
+		transition: 0.4s;
+	}
+	.usr-propiedad a:hover{
+		text-decoration: underline;
+		color: rgb(0,0,0);
+		transition: 0.5s;
+		background-color: rgb(255,185,47);
+	}
+
 	.user-opt{
-		flex: 0 1 auto;
+		flex: 1 1 auto;
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		align-items: center;
 	}
-		.usr-propiedad{
-			flex: 1 1 auto;
-			display: flex;
-			padding-left: 5px;
-			padding-right: 5px;
-		}
-			.usr-propiedad a:hover{
-				text-decoration: underline;
-			}
 		.fav-btn{
 			color: rgb(255,255,255);
 		}
@@ -57,15 +68,20 @@
 						padding: 5px;
 						font-size: 17px;
 					}
+
+			/****AREA DE LOS ARTÍCULOS FAVORITOS Y OTRAS CATEGORÍAS*/
 			.favoritos-usuario{
 				flex: 1 1 auto;
 				display: flex;
 				flex-flow: column;
 			}
+
+				/****TÍTULO DE SELECCIÓN PARA LOS FAVORITOS****/
 				.titulo-fav{
 					flex: 1 1 auto;
 					display: flex;
 					flex-flow: row;
+					border-bottom: 2px solid black;
 				}
 				.titulo-fav h3{
 					padding: 15px;
@@ -75,12 +91,68 @@
 				}
 					.titulo-fav h3:hover{
 						transition: 0.3s;
-						background-color: rgb(150,150,150);
-						color: rgb(255,255,255);
+						background-color: rgb(255,185,47);
+						color: rgb(0,0,0);
 					}
+
+				/****CAJA CONTENEDORA DE LOS ARTICULOS FAVORITOS****/
 				.contenido-art-fav{
 					flex: 1 1 auto;
 					display: flex;
 					flex-flow: row;
 				}
-/*=================================================*/
+					.articles-fav{
+						flex: 1 1 auto;
+						display: flex;
+						flex-flow: row wrap;
+						width: 100%;
+					}
+						/****CONTENIDO DE LOS FAVORITOS****/
+						.article-fav{
+							flex: 1 1 20%;
+							display: flex;
+							flex-flow: column wrap;
+							padding: 10px;
+							transition: background-color 0.7s;
+							transition: 0.3s ease-in-out;
+						}
+							.article-fav:hover{
+								box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+								transition: 0.3s ease;
+								background-color: rgba(255,185,47,0.3);
+								transform: translateY(-3px) scale(1.0);
+							}
+							.article-fav a{
+								color: #000;
+							}
+
+							/****ATRIBUTOS DEL ARTÍCULO****/
+							.img-muestra-fav{
+								margin: 0px;
+								padding: 0px;
+							}
+							.img-muestra-fav img{
+								background-position: center;
+								background-attachment: contain;
+								margin: 0px;
+								padding: 0px;
+							}
+							.descript_producto-fav{
+
+							}
+								.vendedor-fav{
+									color: rgba(0,0,0,0.5);
+									font-size: 13px;
+								}
+								.precio-fav{
+									color: rgba(40,200,10,0.8);
+									font-size: 18px;
+									font-style: italic;
+								}
+								.envio-fav{
+									color: rgba(220,40,20,0.8);
+									font-size: 15px;
+								}
+/*===================================================*/
+/*****AREA PARA ESTILOS DE LA PÁGINA DEL VENDEDOR*****/
+
