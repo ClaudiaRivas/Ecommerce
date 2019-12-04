@@ -153,6 +153,8 @@
 									color: rgba(220,40,20,0.8);
 									font-size: 15px;
 								}
+
+
 /*===================================================*/
 /*****AREA PARA ESTILOS DE LA PÁGINA DEL VENDEDOR*****/
 .container-vendedor-usr{
@@ -164,91 +166,168 @@
 
 	/****ESTILO PARA EL ÁREA DE LOS DATOS DE LA TIENDA****/
 	.datos-usuario-vendedor{
-
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		padding: 5px;
 	}
 		/****IMÁGEN DE LA TIENDA****/
 		.imagen-tienda{
-
+			width: 10%;
+			padding: 5px;
+			margin: 0px;
+			border-radius: 10px;
 		}
 		/****DATOS DEL USUARIO****/
 		.datos{
-
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
 		}
 			.nombre-tienda{
-
+				font-size: 27px;
+				font-weight: bold;
+				padding: 2px;
+				margin: 0px;
 			}
 			.datos-tienda{
-
+				padding: 2px;
+				margin: 0px;
 			}
 
 	/****CONTENEDOR DE LOS DATOS DE VENTAS Y ESTADISTICAS EN LA TIENDA****/
 	.productos-ventas-pagos{
-
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: column wrap;
+		padding: 5pX;
 	}
 
 	/****AREA DE ESTILOS DE LOS DATOS DE VENTA (TOTAL VENDIDO, EL MÁS VENDIDO, ETC.)****/
 	.titulo-ventas{
-
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.contenido-ventas{
-
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		padding-top: 2px;
+		padding-bottom: 5px;
 	}
 
 	/****ÁREA DE ESTILOS DE LOS DATOS DE LOS PRODUCTOS VISTOS*/
 	.titulo-estadistica{
-
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.contenido-estats{
-
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		padding-top: 2px;
+		padding-bottom: 5px;
 	}
 
 	/****ÁREA DE ESTILOS PARA MOSTRAR LOS PAGOS QUE LA TIENDA TENGA QUE REALIZAR (DEUDAS, ETC)****/
 	.titulo-pagos{
-
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.contenido-pagos{
-
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		padding-top: 2px;
+		padding-bottom: 5px;
 	}
 		.deuda-promo{
-
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			padding: 2px;
+			border-radius: 5px;
+			border: 1px solid black;
 		}
 		.deuda-venta{
-
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			padding: 2px;
+			border-radius: 5px;
+			border: 1px solid black;
 		}
 
 	/****ÁREA DE ESTILOS PARA MOSTRAR LOS CUPONES QUE HE EMITIDO****/
 	.titulo-cupones{
-
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	.contenido-cupon{
-		
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		padding-top: 2px;
+		padding-bottom: 5px;
 	}
 
 		/****PRODUCTOS PUBLICADOS (CADA PRODUCTO MOSTRARÁ TODOS SUS DATOS AL LADO DE LA IMÁGEN)****/
 		/****TÍTULO****/
 		.titulo-productos{
-
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		}
 		/****CONTENEDOR DE LOS PRODUCTOS****/
 		.contenido-productos{
-
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
 		}
 			.mi-prod{
-
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column wrap;
+				padding-top: 5px;
+				padding-bottom: 5px;
 			}
 				.article-prod{
-
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					border: 1px solid black;
+					border-radius: 5px;
 				}
 					.img-prod{
-
+						padding: 5px;
+						margin: 0px;
+						border-radius: 10px;
+						align-items: center;
 					}
 					.img-prod img{
-
+						width: 20%;
 					}
 					.descript-prod{
-
+						flex: 1 1 auto;
+						display: flex;
+						flex-flow: column;
+						padding-top: 5px;
+						padding-bottom: 5px;
 					}
 						.precio-fav{
+
+						}
+						.desc-prod{
 
 						}
 						.envio-fav{
