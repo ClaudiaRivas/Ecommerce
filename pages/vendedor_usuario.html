@@ -26,8 +26,8 @@
 
 	<!--SCRIPTS-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-	<script type="text/javascript" src="js/actions.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="../js/actions.js"></script>
 </head>
 
 <!--CUERPO DEL DOCUMENTO. DONDE SE ORGANIZA TODA LA INFORMACIÓN QUE SE MOSTRARÁ-->
@@ -155,6 +155,28 @@
 						<p>Tipos de pago</p>
 					</div>
 				</div>
+				<p class="boton-editar">
+					<a href="" class="bt-home" id="activar_editar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Editar</a>
+				</p>
+
+				<!--FORMULARIO PARA EDITAR DATOS DE LA TIENDA-->
+				<div class="oscurecer" id="oscurecer"></div>
+				<div class="editardatos" id="editardatos">
+					<div class="cerrarRegistro" id="cerrarRegistro"></div>
+					<h4>Editar datos</h4>
+					<form method="POST">
+						<p>Nombre de la tienda:</p>
+						<input type="text" name="nombre_tienda">
+						<p>Dirección:</p>
+						<input type="text" name="direccion_tienda">
+						<p>Teléfono:</p>
+						<input type="text" name="telefono_tienda">
+						<p>NIT:</p>
+						<input type="text" name="nit_tienda">
+						<p>Cambiar contraseña</p>
+						<input type="password" name="cambiar_contra">
+					</form>
+				</div>
 			</div>
 
 			<!--CONTENEDOR DE LOS PRODUCTOS, VENTAS Y DEUDAS EN LA TIENDA-->
@@ -209,9 +231,39 @@
 				<div class="titulo-productos">
 					<h3>Mis productos</h3>
 				</div>
+
 				<!--CONTENEDOR DE CADA PRODUCTO CON SU RESPECTIVA DESCRIPCIÓN-->
 				<div class="contenido-productos">
-					<h3>Nuevo producto</h3>
+
+					<!--BOTON DE AGREGAR-->
+					<p class="boton-nuevo">
+						<a href="" class="bt-home" id="activar_agregar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Nuevo producto</a>
+					</p>
+
+					<!--FORMULARIO PARA AGREGAR PRODUCTO-->
+					<div class="oscurecer" id="oscurecer"></div>
+					<div class="nuevoproducto" id="nuevoproducto">
+						<div class="cerrarRegistro" id="cerrarRegistro"></div>
+						<h4>Editar datos</h4>
+						<form method="POST">
+							<p>Nombre del producto:</p>
+							<input type="text" name="nombre_prod">
+							<p>Precio:</p>
+							<input type="text" name="precio_prod">
+							<p>Cantidad:</p>
+							<input type="text" name="cantidad_prod">
+							<p>Fecha de creación:</p>
+							<input type="text" name="frecha_prod">
+							<p>Hecho a mano o prefabricado:</p>
+							<input type="text" name="amano_prod">
+							<p>Nombre de la tienda</p>
+							<textarea placeholder="descripcion"></textarea>
+							<input type="button" name="foto" value="Subir foto">
+							<input type="submit" name="agregar" value="Agregar">
+						</form>
+					</div>
+
+
 					<!--CONTENEDOR DEL PRODUCTO-->
 					<div class="mi-prod">
 						<!--EL PRODUCTO SE MOSTRARÁ UNO SOBRE OTRO CON TODA SU INFORMACIÓN EN  CASCADA-->

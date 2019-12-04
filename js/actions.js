@@ -10,6 +10,7 @@ function desaparecelogin (){
 		'top':'-100'
 	}, 500);
 }
+
 function desapareceRegistro(){
 	$("#oscurecer").fadeOut();
 }
@@ -51,3 +52,49 @@ $(document).ready(function(){
 		},150);
 	});
 });
+
+/****FUNCIONES PARA LOS DATOS DE LA TIENDA****/
+
+/*FORMULARIO EDITAR DATOS*/
+function desapareceEditar(){
+	$("#oscurecer").fadeOut();
+}
+function desapareceFormEditar(){
+	$("#editardatos").fadeOut(300,desapareceEditar);
+}
+function mostrarFormEditar(){
+	$("#editardatos").fadeIn();
+	$("#oscurecer").click(desapareceFormEditar);
+	$("#cerrarRegistro").click(desapareceFormEditar);
+}
+
+/****MOSTRAR EL FORMULARIO DE EDITAR DATOS TIENDA****/
+function apareceEditar(ed){
+	ed.preventDefault();
+	$("#oscurecer").fadeIn(400, mostrarFormEditar);
+}
+
+/*FORMULARIO AGREGAR PRODUCTOS*/
+function desapareceNuevo(){
+	$("#oscurecer").fadeOut();
+}
+function desapareceFormNuevo(){
+	$("#nuevoproducto").fadeOut(300,desapareceNuevo);
+}
+function mostrarFormNuevo(){
+	$("#nuevoproducto").fadeIn();
+	$("#oscurecer").click(desapareceFormNuevo);
+	$("#cerrarRegistro").click(desapareceFormNuevo);
+}
+
+/****MOSTRAR EL FORMULARIO AGREGAR PRODUCTOS****/
+function apareceNuevo(en){
+	en.preventDefault();
+	$("#oscurecer").fadeIn(400, mostrarFormNuevo);
+}
+
+function mostrarEditaryAgregar(){
+	$("#activar_editar").click(apareceEditar);
+	$("#activar_agregar").click(apareceNuevo);
+}
+$(document).ready(mostrarEditaryAgregar);
