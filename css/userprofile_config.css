@@ -266,6 +266,9 @@
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+		.titulo-estadistica h3{
+			border-bottom: 2px solid rgb(255,185,47);
+		}
 	.contenido-estats{
 		flex: 1 1 auto;
 		display: flex;
@@ -281,6 +284,9 @@
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+		.titulo-pagos h3{
+			border-bottom: 2px solid rgb(255,185,47);
+		}
 	.contenido-pagos{
 		flex: 1 1 auto;
 		display: flex;
@@ -314,6 +320,9 @@
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+		.titulo-cupones h3{
+			border-bottom: 2px solid rgb(255,185,47);
+		}
 	.contenido-cupon{
 		flex: 1 1 auto;
 		display: flex;
@@ -330,6 +339,9 @@
 			padding-top: 5px;
 			padding-bottom: 5px;
 		}
+			.titulo-productos h3{
+				border-bottom: 2px solid rgb(255,185,47);
+			}
 		/****CONTENEDOR DE LOS PRODUCTOS****/
 		.contenido-productos{
 			flex: 1 1 auto;
@@ -337,7 +349,8 @@
 			flex-flow: column nowrap;
 		}
 			.boton-nuevo{
-				padding-bottom: 3px;
+				padding-top: 5px;
+				padding-bottom: 5px;
 			}
 				.boton-nuevo a{
 					color: rgb(255,255,255);
