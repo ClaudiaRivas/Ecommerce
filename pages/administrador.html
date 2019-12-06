@@ -141,39 +141,37 @@
 		</header>
 
 
-		<!--CONTENIDO DEL PERFIL DE USUARIO-->
-		<section class="container-vendedor-usr">
-			<div class="datos-usuario-vendedor">
-				<img src="../icons/user-profile.png"  class="imagen-tienda">
+		<!--CONTENIDO DEL PERFIL DEL ADMINISTRADOR-->
+		<section class="container-admin">
+			<div class="datos-admin">
+				<img src="../icons/user-profile.png"  class="imagen-admin">
 				<div class="datos">
-					<div class="nombre-tienda">
-						<p>Librería con clase</p>
+					<div class="nombre-admin">
+						<p>JosGua</p>
 					</div>
-					<div class="datos-tienda">
-						<p>Dirección</p>
+					<div class="datos-admin-gen">
+						<p>Correo</p>
 						<p>Teléfono</p>
-						<p>NIT</p>
-						<p>Tipos de pago</p>
 					</div>
 				</div>
+
+				<!--BOTON PARA EDITAR LOS DATOS DEL ADMINISTRADOR-->
 				<p class="boton-editar">
-					<a href="" class="bt-home" id="activar_editar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Editar datos de la tienda</a>
+					<a href="" class="bt-home" id="activar_editar_admin">
+						<i class="fa fa-user-plus separar" aria-hidden="true"></i>Editar datos del administrador
+					</a>
 				</p>
 
-				<!--FORMULARIO PARA EDITAR DATOS DE LA TIENDA-->
+				<!--FORMULARIO PARA EDITAR DATOS DEL ADMINISTRADOR-->
 				<div class="oscurecer" id="oscurecer"></div>
-				<div class="editardatos" id="editardatos">
+				<div class="editardatos" id="editardatosAdmn">
 					<div class="cerrarRegistro" id="cerrarRegistro"></div>
 					<h4>Editar datos</h4>
 					<form method="POST">
-						<p>Nombre de la tienda:</p>
-						<input type="text" name="nombre_tienda">
-						<p>Dirección:</p>
-						<input type="text" name="direccion_tienda">
-						<p>Teléfono:</p>
-						<input type="text" name="telefono_tienda">
-						<p>NIT:</p>
-						<input type="text" name="nit_tienda">
+						<p>Nombre del administrador:</p>
+						<input type="text" name="nombre_admin">
+						<p>Correo:</p>
+						<input type="text" name="correo_admin">
 						<p>Cambiar contraseña</p>
 						<input type="password" name="cambiar_contra">
 						<input type="submit" name="Guardar" value="Guardar">
@@ -181,105 +179,225 @@
 				</div>
 			</div>
 
-			<!--CONTENEDOR DE LOS PRODUCTOS, VENTAS Y DEUDAS EN LA TIENDA-->
-			<div class="productos-ventas-pagos">
+			<!--CONTENEDOR DE LAS TABLAS DE LA BASE DE DATOS-->
+			<div class="usuarios-tablas">
 
-				<!--AREA DE DETALLE DE VENTAS TOTALES EN PRODUCTOS DE LA TIENDA-->
-				<div class="titulo-ventas">
-					<h3>Mis ventas</h3>
-				</div>
-				<div class="contenido-ventas">
-					<p>Producto más vendido</p>
-					<p>ventas totales</p>
-					<p>cantidad de productos vendidos</p>
-					<p>fechas en las que se vendió</p>
+				<!--AREA DE TABLAS DE USUARIOS-->
+				<div class="titulo-usuarios-tablas">
+					<h3>USUARIOS</h3>
 				</div>
 
-				<!--AREA DE ESTADISTICAS-->
-				<div class="titulo-estadistica">
-					<h3>mis estadisticas</h3>
-				</div>
-				<div class="contenido-estats">
-					<p>total de vistas</p>
-					<p>pedidos con descuento</p>
-				</div>
-
-				<!--AREA DE DEUDAS DE LA TIENDA CON LA PLATAFORMA-->
-				<div class="titulo-pagos">
-					<h3>Pagos en la plataforma</h3>
-				</div>
-				<div class="contenido-pagos">
-					<div class="deuda-promo">
-						<p>debes tanto por publicación del mes pasado</p>
-						<p>paga antes del día</p>
+				<div class="contenido-usuarios-tablas">
+					<!--BOTON DE AGREGAR-->
+					<p class="boton-nuevo">
+						<a href="" class="bt-home" id="activar_agregar_usuario">
+							<i class="fa fa-user-plus separar" aria-hidden="true"></i>Agregar usuario
+						</a>
+					</p>
+					<!--FORMULARIO PARA AGREGAR USUARIO-->
+					<div class="oscurecer" id="oscurecer"></div>
+					<div class="nuevoproducto" id="nuevoUsuario">
+						<div class="cerrarRegistro" id="cerrarRegistro"></div>
+						<h4>Agregar nuevo usuario</h4>
+						<form method="POST">
+							<p>Nombre de usuario:</p>
+							<input type="text" name="usuario">
+							<p>Correo electrónico:</p>
+							<input type="text" name="correo">
+							<p>Contraseña:</p>
+							<input type="password" name="password">
+							<p>Rol del usuario:</p>
+							<input type="text" name="idrol">
+							<input type="submit" name="agregar" value="Agregar">
+						</form>
 					</div>
-					<div class="deuda-venta">
-						<p>debes tanto por ventas del mes pasado</p>
-						<p>paga antes del día</p>
+
+					<!--CONTENEDOR DE LA TABLA-->
+					<div class="tabla-usuarios">
+						<div class="cabecera-tabla-usr">
+							<div class="celda-usr"><p>ID</p></div>
+							<div class="celda-usr"><p>Nombre de usuario</p></div>
+							<div class="celda-usr"><p>Correo</p></div>
+							<div class="celda-usr"><p>Rol</p></div>
+							<div class="celda-usr"><p>---</p></div>
+							<div class="celda-usr"><p>---</p></div>
+						</div>
+						<div class="contenido-tabla-usr">
+							<div class="celda-usr"><p>1</p></div>
+							<div class="celda-usr"><p>ed</p></div>
+							<div class="celda-usr"><p>ed@gmail.com</p></div>
+							<div class="celda-usr"><p>4</p></div>
+							<div class="celda-usr-btn">
+								<!--BOTON PARA EDITAR USUARIO-->
+								<p class="boton-nuevo">
+									<a href="" class="bt-home" id="activar_editar_usuario">
+										<i class="fa fa-user-plus separar" aria-hidden="true"></i>Editar
+									</a>
+								</p>
+								<!--FORMULARIO PARA EDITAR USUARIO-->
+								<div class="oscurecer" id="oscurecer"></div>
+								<div class="nuevoproducto" id="editarUsuario">
+									<div class="cerrarRegistro" id="cerrarRegistro"></div>
+									<h4>Editar usuario</h4>
+									<form method="POST">
+										<p>Nombre de usuario:</p>
+										<input type="text" name="usuario">
+										<p>Correo electrónico:</p>
+										<input type="text" name="correo">
+										<p>Contraseña:</p>
+										<input type="password" name="password">
+										<p>Rol del usuario:</p>
+										<input type="text" name="idrol">
+										<input type="submit" name="editar" value="Editar">
+									</form>
+								</div>
+							</div>
+							<div class="celda-usr-btn">
+								<!--BOTON PARA BORRAR-->
+								<p class="boton-nuevo">
+									<a href="" class="bt-home" id="activar_borrar_usuario">
+										<i class="fa fa-user-plus separar" aria-hidden="true"></i>Borrar
+									</a>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<!--AREA DE LOS DESCUENTOS Y CUPONES-->
-				<!--EN ESTA ÁREA SE MOSTRARÁ UNA LISTA PARA AGREGAR, ELIMINAR CUPONES Y CON QUÉ PRODUCTOS-->
-				<div class="titulo-cupones">
-					<h3>Cupones</h3>
+				<!--AREA DE LAS TABLAS DE ROLES-->
+				<div class="titulo-roles-tablas">
+					<h3>ROLES DE USUARIOS</h3>
 				</div>
-				<div class="contenido-cupon">
-					<p>Crear un nuevo cupon</p>
+				<div class="contenido-roles-tablas">
+					<!--BOTON DE AGREGAR-->
+					<p class="boton-nuevo">
+						<a href="" class="bt-home" id="activar_agregar_rol">
+							<i class="fa fa-user-plus separar" aria-hidden="true"></i>Agregar rol
+						</a>
+					</p>
+					<!--FORMULARIO PARA AGREGAR ROL-->
+					<div class="oscurecer" id="oscurecer"></div>
+					<div class="nuevoproducto" id="nuevoRol">
+						<div class="cerrarRegistro" id="cerrarRegistro"></div>
+						<h4>Agregar nuevo rol</h4>
+						<form method="POST">
+							<p>Nombre del Rol:</p>
+							<input type="text" name="rol">
+							<input type="submit" name="agregar_usr" value="Agregar">
+						</form>
+					</div>
+
+					<!--CONTENEDOR DE LA TABLA-->
+					<div class="tabla-roles">
+						<div class="cabecera-tabla-rl">
+							<div class="celda-rl"><p>ID</p></div>
+							<div class="celda-rl"><p>Rol</p></div>
+							<div class="celda-rl"><p>---</p></div>
+							<div class="celda-rl"><p>---</p></div>
+						</div>
+						<div class="contenido-tabla-rl">
+							<div class="celda-rl"><p>1</p></div>
+							<div class="celda-rl"><p>Administrador</p></div>
+							<div class="celda-rl-btn">
+								<!--BOTON PARA EDITAR ROL-->
+								<p class="boton-nuevo">
+									<a href="" class="bt-home" id="activar_editar_rol">
+										<i class="fa fa-user-plus separar" aria-hidden="true"></i>Editar
+									</a>
+								</p>
+
+								<!--FORMULARIO PARA AGREGAR ROL-->
+								<div class="oscurecer" id="oscurecer"></div>
+								<div class="nuevoproducto" id="editarRol">
+									<div class="cerrarRegistro" id="cerrarRegistro"></div>
+									<h4>Editar rol</h4>
+									<form method="POST">
+										<p>Nombre del Rol:</p>
+										<input type="text" name="rol">
+										<input type="submit" name="editar_rl" value="Editar">
+									</form>
+								</div>
+							</div>
+							<div class="celda-rl-btn">
+								<!--BOTON PARA BORRAR-->
+								<p class="boton-nuevo">
+									<a href="" class="bt-home" id="activar_borrar_rol">
+										<i class="fa fa-user-plus separar" aria-hidden="true"></i>Borrar
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
 
-				<!--AREA DE LOS PRODUCTOS PUBLICADOS-->
-				<div class="titulo-productos">
-					<h3>Mis productos</h3>
+				<!--AREA DE LAS ETIQUETAS-->
+				<div class="titulo-tags-tablas">
+					<h3>ETIQUETAS DE LOS PRODUCTOS</h3>
 				</div>
-
-				<!--CONTENEDOR DE CADA PRODUCTO CON SU RESPECTIVA DESCRIPCIÓN-->
-				<div class="contenido-productos">
+				<!--CONTENEDOR DE LAS ETIQUETAS-->
+				<div class="contenido-tags-tablas">
 
 					<!--BOTON DE AGREGAR-->
 					<p class="boton-nuevo">
-						<a href="" class="bt-home" id="activar_agregar"><i class="fa fa-user-plus separar" aria-hidden="true"></i>Nuevo producto</a>
+						<a href="" class="bt-home" id="activar_agregar_tag">
+							<i class="fa fa-user-plus separar" aria-hidden="true"></i>Agregar etiqueta
+						</a>
 					</p>
 
-					<!--FORMULARIO PARA AGREGAR PRODUCTO-->
+					<!--FORMULARIO PARA AGREGAR ETIQUETA-->
 					<div class="oscurecer" id="oscurecer"></div>
-					<div class="nuevoproducto" id="nuevoproducto">
+					<div class="nuevoproducto" id="nuevoTag">
 						<div class="cerrarRegistro" id="cerrarRegistro"></div>
-						<h4>Editar datos</h4>
+						<h4>Agregar etiqueta</h4>
 						<form method="POST">
-							<p>Nombre del producto:</p>
-							<input type="text" name="nombre_prod">
-							<p>Precio:</p>
-							<input type="text" name="precio_prod">
-							<p>Cantidad:</p>
-							<input type="text" name="cantidad_prod">
-							<p>Fecha de creación:</p>
-							<input type="text" name="frecha_prod">
-							<p>Hecho a mano o prefabricado:</p>
-							<input type="text" name="amano_prod">
-							<p>Nombre de la tienda</p>
-							<textarea placeholder="descripcion"></textarea>
-							<input type="button" name="foto" value="Subir foto">
+							<p>Nueva etiqueta:</p>
+							<input type="text" name="tag">
 							<input type="submit" name="agregar" value="Agregar">
 						</form>
 					</div>
 
 
-					<!--CONTENEDOR DEL PRODUCTO-->
-					<div class="mi-prod">
-						<!--EL PRODUCTO SE MOSTRARÁ UNO SOBRE OTRO CON TODA SU INFORMACIÓN EN  CASCADA-->
-						<article class="article-prod">
-							<div class="img-prod">
-								<img src="../imgs/deportivos.jpg">
+					<!--CONTENEDOR DE LA TABLA ETIQUETAS-->
+					<div class="tabla-tags">
+						<div class="cabecera-tabla-tgs">
+							<div class="celda-tgs"><p>ID</p></div>
+							<div class="celda-tgs"><p>Etiqueta</p></div>
+							<div class="celda-tgs"><p>---</p></div>
+							<div class="celda-tgs"><p>---</p></div>
+						</div>
+						<div class="contenido-tabla-tgs">
+							<div class="celda-tgs"><p>1</p></div>
+							<div class="celda-tgs"><p>Ropa</p></div>
+							<div class="celda-tgs-btn">
+								<!--BOTON EDITAR ETIQUETA-->
+								<p class="boton-nuevo">
+									<a href="" class="bt-home" id="activar_editar_Tag">
+										<i class="fa fa-user-plus separar" aria-hidden="true"></i>Editar
+									</a>
+								</p>
+
+								<!--FORMULARIO PARA AGREGAR ETIQUETA-->
+								<div class="oscurecer" id="oscurecer"></div>
+								<div class="nuevoproducto" id="editarTag">
+									<div class="cerrarRegistro" id="cerrarRegistro"></div>
+									<h4>Agregar etiqueta</h4>
+									<form method="POST">
+										<p>Nueva etiqueta:</p>
+										<input type="text" name="tag">
+										<input type="submit" name="agregar" value="Agregar">
+									</form>
+								</div>
 							</div>
-							<div class="descript-prod">
-								<h4>Zapatillas deportivas...</h4>
-								<p class="precio-fav">$10.45</p>
-								<p class="desc-prod">DESCCRIPCION DEL PRODUCTO</p>
-								<p class="envio-fav">Envío gratuito</p>
+							<div class="celda-tgs-btn">
+								<!--BOTON BORRAR-->
+								<p class="boton-nuevo">
+									<a href="" class="bt-home" id="activar_borrar_Tag">
+										<i class="fa fa-user-plus separar" aria-hidden="true"></i>Borrar
+									</a>
+								</p>
 							</div>
-						</article>
+						</div>
 					</div>
 				</div>
 			</div>

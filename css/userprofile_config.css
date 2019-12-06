@@ -239,7 +239,7 @@
 		flex: 1 1 auto;
 		display: flex;
 		flex-flow: column wrap;
-		padding: 5pX;
+		padding: 5px;
 	}
 
 	/****AREA DE ESTILOS DE LOS DATOS DE VENTA (TOTAL VENDIDO, EL MÁS VENDIDO, ETC.)****/
@@ -424,3 +424,210 @@
 						.envio-fav{
 
 						}
+/*********************************************************/
+/****ESTILOS DEL PERFIL DEL ADMINISTRADOR DE LA PÁGINA****/
+.container-admin{
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 10px;
+}
+	/*ESTILO PARA LOS DATOS DEL ADMINISTRADOR*/
+	.datos-admin{
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row wrap;
+		padding: 5px;
+	}
+		/*PERFIL DEL ADMINISTRADOR*/
+		.imagen-admin{
+			width: 10%;
+			height: 10%;
+			padding: 5px;
+			margin: 0px;
+			border-radius: 10px;
+		}
+			.nombre-admin{
+				font-size: 27px;
+				font-weight: bold;
+				padding: 2px;
+				margin: 0px;
+			}
+			.datos-admin-gen{
+				padding: 2px;
+				margin: 0px;
+			}
+	/*CONTENEDOR DE LAS TABLAS*/
+	.usuarios-tablas{
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: column wrap;
+		padding: 5px;
+	}
+		/*ESTILO PARA LA TABLA DE USUARIOS*/
+		.titulo-usuarios-tablas{
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+			/*LINEA BAJO EL TITULO*/
+			.titulo-usuarios-tablas h3{
+				border-bottom: 2px solid rgb(255,185,47);
+			}
+		/*ESTILO PARA EL CONTENEDOR*/
+		.contenido-usuarios-tablas{
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+			/*DISPOSICION DE LAS FILAS Y COLUMNAS*/
+			.tabla-usuarios{
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				border: 1px solid black;
+				width: 75%;
+				margin: 5px;
+			}
+				/*ESTILO PADA EL TITULO DE CADA COLUMNA*/
+				.cabecera-tabla-usr{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					width: 100%;
+					text-align: center;
+				}
+				/*ESTILO PARA LAS FILAS*/
+				.contenido-tabla-usr{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					width: 100%;
+				}
+					/*ESTILO PARA LAS CELDAS DE LA TABLA*/
+					.celda-usr{
+						padding: 5px;
+						width: 16.666666667%;
+						border: 1px solid black;
+					}
+					.celda-usr-btn{
+						padding: 5px;
+						width: 16.666666667%;
+						border: 1px solid black;
+						text-align: center;
+					}
+
+
+		/*ESTILO PARA LA TABLA ROLES*/
+		.titulo-roles-tablas{
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+			/*LINEA BAJO EL TITULO*/
+			.titulo-roles-tablas h3{
+				border-bottom: 2px solid rgb(255,185,47);
+			}
+		/*ESTILO PARA EL CONTENEDOR*/
+		.contenido-roles-tablas{
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+			/*DISPOSICIÓN DE LAS FILAS Y LAS COLUMNAS*/
+			.tabla-roles{
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				border: 1px solid black;
+				width: 50%;
+				margin: 5px;
+			}
+				/*ESTILO PARA EL TITULO DE CADA COLUMNA*/
+				.cabecera-tabla-rl{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					width: 100%;
+					text-align: center;
+				}
+				/*ESTILO PARA CADA FILA*/
+				.contenido-tabla-rl{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					width: 100%;
+				}
+					/*ESTILO DE CADA CELDA ROLES*/
+					.celda-rl{
+						padding: 5px;
+						width: 25%;
+						border: 1px solid black;
+					}
+					.celda-rl-btn{
+						padding: 5px;
+						width: 25%;
+						border: 1px solid black;
+						text-align: center;
+					}
+
+
+		/*ESTILO PARA LA TABLA ETIQUETAS*/
+		.titulo-tags-tablas{
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+			/*LINEA BAJO EL TITULO*/
+			.titulo-tags-tablas h3{
+				border-bottom: 2px solid rgb(255,185,47);
+			}
+		/*ESTILO PARA EL CONTENEDOR*/
+		.contenido-tags-tablas{
+			flex: 1 1 auto;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+			/*DISPOSICIÓN DE LAS FILAS Y LAS COLUMNAS*/
+			.tabla-tags{
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				border: 1px solid black;
+				width: 50%;
+				margin: 5px;
+			}
+				/*ESTILO PARA EL TITULO DE CADA COLUMNA*/
+				.cabecera-tabla-tgs{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					width: 100%;
+					text-align: center;
+				}
+				/*ESTILO PARA CADA FILA*/
+				.contenido-tabla-tgs{
+					flex: 1 1 auto;
+					display: flex;
+					flex-flow: row wrap;
+					width: 100%;
+				}
+					/*ESTILO DE CADA CELDA ETIQUETAS*/
+					.celda-tgs{
+						padding: 5px;
+						width: 25%;
+						border: 1px solid black;
+					}
+					.celda-tgs-btn{
+						padding: 5px;
+						width: 25%;
+						border: 1px solid black;
+						text-align: center;
+					}
+/*********************************************************/
